@@ -26,7 +26,7 @@ choosefirstpage = function(id){
 };
 
 loadbod = function(page){
-  prevpgstack.append(current);
+  prevpgstack.push(current);
   current = page;
   current.loadpage();
   current.changepgtitle();
