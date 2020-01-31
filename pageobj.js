@@ -37,9 +37,7 @@ var Pages = function(){
       return _cover;
     };
 
-    var hidetoggle = false;
-    this.togglehide = function(divelem, frameelem){
-      hidetoggle = !hidetoggle;
+    this.unhide = function(divelem, frameelem){
       var styling = (divelem == 'listcontainer') ? 'flex' : 'inline-block';
       // frameelem.style.display = (hidetoggle) ? styling : 'none';
       frameelem.style.display = styling;
@@ -90,7 +88,7 @@ var Pages = function(){
         bubl.setAttribute("onclick", "openpage('"+lelkey+"', "+elemcoll+")");
         bubl.onclick = function() {openpage(lelkey, elemcoll);};
         // bubl.setAttribute("id", lelkey);
-        bubl.setAttribute("style", ("background-image :url("+listchoice[lelkey].getcover()+")"));
+        bubl.setAttribute("style", ("background-image :url("+listchoice[lelkey].getcover()+"), url(icons/jackie.png)"));
 
         divcontainer.appendChild(bubl);
 
@@ -201,11 +199,13 @@ Pages.prototype.loadpage = function(){
     return;
   }
 
+  frame.src = 'selectionpage.html';
+
   var iframeDocument = frame.contentDocument || frame.contentWindow.document;
   divs = this.gettypestyles();
   for (div in divs){
     var realelem = iframeDocument.getElementById(div);
-    this.togglehide(div, realelem);
+    this.unhide(div, realelem);
     this.genereate(div, realelem);
   }
 };

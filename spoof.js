@@ -8,6 +8,7 @@ directpg = {
 };
 
 
+// Make Pages and store in directpg
 for (var key in directpg){
   directpg[key] = new Pages(outson[key]);
 }
@@ -26,12 +27,20 @@ choosefirstpage = function(id){
 };
 
 loadbod = function(page){
+  hideall();
   prevpgstack.push(current);
   current = page;
   current.loadpage();
   current.changepgtitle();
 };
 
+hideall = function(){
+  frameelem = document.getElementById('iframe');
+  var iframeDocument = frameelem.contentDocument || frameelem.contentWindow.document;
+  var allkids = iframeDocument.body.children;
+  for (var eachkid in allkids){
+    eachkid.style.display = 'none';
+};
 
 var openpage = function(id, elemcoll){
   var toopen = none;

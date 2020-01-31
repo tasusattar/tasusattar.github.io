@@ -6,10 +6,11 @@ hoverings = {
   'TRAVELS1' : 'travel',
   'PORTFOLIO1' : 'portfolio',
   'MUSINGS2' : 'musings',
-  'opening' : 'HI! Tasu here!'
+  'opening' : 'HI! Tasu here!',
+  'prompter' : "There's really no reason to <b>CLICK ME<b>"
 }
 
-prompthover = ['nlaksdnas', 'wqdnoiq', 'apdmaspdom'];
+promptchoices = ['nlaksdnas', 'wqdnoiq', 'apdmaspdom'];
 var idiocy = 0;
 var waswriting = '';
 var timer;
@@ -29,8 +30,12 @@ var hovs = function(id){
   writesth(hoverings[id]);
 };
 
-var hovprompt = function(){
-  writesth(prompthover[idiocy]);
+// var hovprompt = function(){
+//   writesth(prompthover[idiocy]);
+//   idiocy = (idiocy < 2) ? idiocy + 1 : 0;
+// };
+var promptclick = function(){
+  writesth(promptchoices[idiocy]);
   idiocy = (idiocy < 2) ? idiocy + 1 : 0;
 };
 
@@ -63,4 +68,5 @@ for (var i = 0; i < allclickable.length; i++){
 
 }
 
+prompt.addEventListener('click', )
 writesth(hoverings['opening']);
