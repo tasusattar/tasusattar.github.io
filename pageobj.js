@@ -88,6 +88,7 @@ var Pages = function(){
         var bubltag = (elemcoll) ? "bubble "+ bubbletype : "bubble singles";
         bubl.setAttribute("class", bubltag);
         bubl.setAttribute("onclick", "openpage('"+lelkey+"', "+elemcoll+")");
+        bubl.onclick = function() {openpage(lelkey, elemcoll);};
         // bubl.setAttribute("id", lelkey);
         bubl.setAttribute("style", ("background-image :url("+listchoice[lelkey].getcover()+")"));
 
@@ -97,6 +98,7 @@ var Pages = function(){
         info.setAttribute("class", "info");
         info.innerHTML(lelkey);
         info.setAttribute("onclick", "openpage('"+lelkey+"', "+elemcoll+" )")
+        info.onclick = function() {openpage(lelkey, elemcoll);};
         divcontainer.appendChild(info);
 
 
