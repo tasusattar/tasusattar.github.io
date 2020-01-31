@@ -59,7 +59,7 @@ var writesth = function(towrite){
 
 for (var i = 0; i < allclickable.length; i++){
   clickbill = allclickable[i];
-  clickbill.addEventListener('click', window.parent.choosefirstpage(clickbill.id));
+  // clickbill.addEventListener('click', parent.choosefirstpage(clickbill.id));
 
 }
 
