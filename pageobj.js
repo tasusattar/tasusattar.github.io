@@ -205,7 +205,7 @@ Pages.prototype.loadpage = function(){
   divs = this.gettypestyles();
   for (div in divs){
     var realelem = iframeDocument.getElementById(div);
-    this.unhide(div, realelem);
+    this.togglehide(div, realelem);
     this.genereate(div, realelem);
   }
 };
