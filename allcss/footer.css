@@ -1,0 +1,17 @@
+#foot{
+  display: inline-flex;
+  position: absolute;
+  top: 100vh;
+  height: 40vh;
+  width: 99vw;
+  z-index: 4;
+  margin: 1% 0.5%;
+  color: white;
+
+  border: 1px solid white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  background-color: black;
+
+}

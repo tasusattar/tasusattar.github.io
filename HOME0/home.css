@@ -1,0 +1,216 @@
+html{
+  height: 100%;
+  width: 100%;
+
+}
+
+body{
+  margin: 2%;
+  height: 98%;
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+}
+
+#leftside{
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  height: 90%;
+  width: 30%;
+
+  margin-right: -2%;
+
+}
+
+#rightside{
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: stretch;
+  height: 90%;
+  width: 60%;
+
+  margin-left: -3%;
+
+}
+
+
+.bubble{
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  margin: 1% 2%;
+
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  height: 0;
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 0 7px 12px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
+
+}
+
+.bubble:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.bubble:active{
+  transform: translateY(2px);
+
+}
+
+.homelabels{
+  margin-top: 30%;
+  visibility: hidden;
+}
+
+#WORK2{
+  z-index: 4;
+
+  order: 1;
+  flex-grow: 1;
+  align-self: flex-end;
+
+  width: 30%;
+  padding-bottom: 15%;
+
+  right: 30%;
+  background-color: red;
+}
+
+#prompter{
+  z-index: 2;
+
+  order: 2;
+  flex-grow: 2;
+  flex-shrink: 2;
+  align-self: flex-start;
+
+  width: 75%;
+  padding-bottom: 20%;
+
+  left: 0;
+  margin-left: 0;
+}
+
+#typewritercontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
+  height:100%;
+  width: 85%;
+  padding-top: 20%;
+}
+
+#typewriter{
+  /* overflow: hidden;  */
+  /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid black;  */
+  /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em;
+  /* Adjust as needed */
+  /* animation:
+    typing 3.5s steps(40, end),
+     blink-caret .75s step-end infinite; */
+}
+
+/* The typing effect */
+/* @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+} */
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+} */
+
+
+#ABOUT3{
+  z-index: 8;
+
+  order: 3;
+  flex-grow: 1;
+  align-self: flex-end;
+
+  width: 50%;
+  padding-bottom: 35%;
+
+  right: 0;
+  margin-right: 0;
+
+  background-image: url('../icons/jackie.png');
+}
+
+#PORTFOLIO1{
+  z-index: 7;
+
+  order: 4;
+  flex-grow: 2;
+  flex-shrink: 2;
+  align-self: flex-start;
+
+  width: 60%;
+  padding-bottom: 18%;
+
+  left: 10%;
+  background-color: blue;
+}
+
+#TRAVELS1{
+  z-index: 5;
+
+  order: 5;
+  flex-grow: 1;
+  align-self: flex-end;
+
+  width: 35%;
+  padding-bottom: 20%;
+
+  right: 25%;
+  background-color: green;
+
+}
+
+#MUSINGS2{
+  z-index: 3;
+
+  flex-grow: 1.5;
+  order: 6;
+  align-self: flex-start;
+
+  width: 40%;
+  padding-bottom: 12%;
+
+  left: 2%;
+  background-color: purple;
+}
