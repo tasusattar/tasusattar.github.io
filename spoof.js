@@ -40,6 +40,7 @@ hideall = function(){
   var allkids = iframeDocument.body.children;
   for (var eachkid in allkids){
     eachkid.style.display = 'none';
+  }
 };
 
 var openpage = function(id, elemcoll){

@@ -7,7 +7,7 @@ hoverings = {
   'PORTFOLIO1' : 'portfolio',
   'MUSINGS2' : 'musings',
   'opening' : 'HI! Tasu here!',
-  'prompter' : "There's really no reason to <b>CLICK ME<b>"
+  'prompter' : "There's really no reason to <b>CLICK ME</b>"
 }
 
 promptchoices = ['nlaksdnas', 'wqdnoiq', 'apdmaspdom'];
