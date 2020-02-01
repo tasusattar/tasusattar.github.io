@@ -23,8 +23,8 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: stretch;
+  justify-content: center;
+  align-content: center;
   height: 95%;
   /* width: 40%; */
   width: 38vw;
@@ -39,8 +39,8 @@ body{
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-content: stretch;
+  justify-content: center;
+  align-content: center;
   height: 95%;
   /* width: 60%; */
   width: 58vw;
@@ -91,14 +91,14 @@ body{
   z-index: 4;
 
   order: 1;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   align-self: flex-end;
 
-  width: 12vmax;
-  height: 10vw;
+  width: 13vmax;
+  height: 13vmax;
   /* padding-bottom: 15%; */
 
-  right: 30%;
+  right: 25%;
   background-color: red;
 }
 
@@ -106,12 +106,12 @@ body{
   z-index: 2;
 
   order: 2;
-  flex-grow: 2;
+  /* flex-grow: 2; */
   flex-shrink: 2;
   align-self: flex-start;
 
   width: 75%;
-  height: 12vw;
+  height: 18vmax;
   /* padding-bottom: 15%; */
 
   left: 0;
@@ -129,12 +129,14 @@ body{
 
   height:100%;
   width: 85%;
-  padding-top: 20%;
+  /* padding-top: 20%; */
 }
 
 #typewriter{
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .10em;
+  font-size: 90%;
+
 
 }
 
@@ -142,11 +144,11 @@ body{
   z-index: 8;
 
   order: 3;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   align-self: flex-end;
 
-  width: 15vmax;
-  height: 15vw;
+  width: 18vmax;
+  height: 18vmax;
   /* padding-bottom: 35%; */
 
   right: 0;
@@ -159,12 +161,12 @@ body{
   z-index: 7;
 
   order: 4;
-  flex-grow: 2;
+  /* flex-grow: 2; */
   flex-shrink: 2;
   align-self: flex-start;
 
   width: 60%;
-  height: 11vw;
+  height: 20vmax;
   /* padding-bottom: 18%; */
 
   left: 10%;
@@ -175,11 +177,11 @@ body{
   z-index: 5;
 
   order: 5;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   align-self: flex-end;
 
   width: 13vmax;
-  height: 11vw;
+  height: 13vmax;
   /* padding-bottom: 20%; */
 
   right: 25%;
@@ -190,12 +192,12 @@ body{
 #MUSINGS2{
   z-index: 3;
 
-  flex-grow: 1.5;
+  /* flex-grow: 1.5; */
   order: 6;
   align-self: flex-start;
 
   width: 40%;
-  height: 10vw;
+  height: 20vmin;
   /* padding-bottom: 12%; */
 
   left: 2%;
