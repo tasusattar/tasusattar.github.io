@@ -28,7 +28,7 @@ html, body{
   font-family: Geneva;
   letter-spacing: 0.05em;
 
-  background-color: var(--c2dark);
+  /* background-color: var(--c2dark); */
   /* background-image: linear-gradient(-90deg, #99D3DF 50%, #88BBD6); */
 }
 

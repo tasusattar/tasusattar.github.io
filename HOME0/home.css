@@ -111,31 +111,34 @@ body{
   align-self: flex-start;
 
   width: 75%;
-  height: 18vmax;
+  height: 17vmax;
   /* padding-bottom: 15%; */
 
   left: 0;
   margin-left: 0;
+  top: 1%;
 }
 
 #typewritercontainer{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
 
-  height:100%;
-  width: 85%;
+  height:65%%;
+  width: 80%;
   /* padding-top: 20%; */
+  overflow: auto;
 }
 
 #typewriter{
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .10em;
   font-size: 90%;
+  overflow: auto;
 
 
 }
@@ -166,7 +169,7 @@ body{
   align-self: flex-start;
 
   width: 60%;
-  height: 20vmax;
+  height: 18vmax;
   /* padding-bottom: 18%; */
 
   left: 10%;
@@ -201,5 +204,6 @@ body{
   /* padding-bottom: 12%; */
 
   left: 2%;
+  bottom: 1%;
   background-color: purple;
 }
