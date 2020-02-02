@@ -26,7 +26,7 @@ choosefirstpage = function(id){
   loadbod(pgofchoice);
 };
 
-loadbod = function(page){
+var loadbod = function(page){
   hideall();
   prevpgstack.push(current);
   current = page;
@@ -34,8 +34,8 @@ loadbod = function(page){
   current.changepgtitle();
 };
 
-hideall = function(){
-  frameelem = document.getElementById('iframe');
+var hideall = function(){
+  var frameelem = document.getElementById('iframe');
   var iframeDocument = frameelem.contentDocument || frameelem.contentWindow.document;
   var allkids = iframeDocument.body.children;
   for (var eachkid in allkids){
