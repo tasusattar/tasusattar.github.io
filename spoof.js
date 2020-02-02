@@ -38,8 +38,8 @@ var hideall = function(){
   var frameelem = document.getElementById('bod');
   var iframeDocument = frameelem.contentDocument || frameelem.contentWindow.document;
   var allkids = iframeDocument.body.children;
-  for (var eachkid in allkids){
-    eachkid.style.display = 'none';
+  for (var kidi = 0; kidi < allkids.length; kidi++){
+    allkids[kidi].style.display = 'none';
   }
 };
 
