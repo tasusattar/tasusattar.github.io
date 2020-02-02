@@ -203,7 +203,7 @@ Pages.prototype.loadpage = function(){
 
   var iframeDocument = frame.contentDocument || frame.contentWindow.document;
   divs = this.gettypestyles();
-  for (div in divs){
+  for (var divi = 0; divi < divs.length; divi++){
     var realelem = iframeDocument.getElementById(div);
     this.unhide(div, realelem);
     this.genereate(div, realelem);
