@@ -204,9 +204,9 @@ Pages.prototype.loadpage = function(){
   var iframeDocument = frame.contentDocument || frame.contentWindow.document;
   divs = this.gettypestyles();
   for (var divi = 0; divi < divs.length; divi++){
-    var realelem = iframeDocument.getElementById(div);
-    this.unhide(div, realelem);
-    this.genereate(div, realelem);
+    var realelem = iframeDocument.getElementById(divs[divi]);
+    this.unhide(divs[divi], realelem);
+    this.genereate(divs[divi], realelem);
   }
 };
 
