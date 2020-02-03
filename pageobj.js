@@ -201,12 +201,14 @@ Pages.prototype.loadpage = function(){
 
   frame.src = 'selectionpage.html';
 
-  var iframeDocument = frame.contentDocument || frame.contentWindow.document;
-  divs = this.gettypestyles();
+  var iframeDocument = frame.contentWindow.document.body;
+  // frame.contentDocument.body || 
+  var divs = this.gettypestyles();
   for (var divi = 0; divi < divs.length; divi++){
-    var realelem = iframeDocument.getElementById(divs[divi]);
-    this.unhide(divs[divi], realelem);
-    this.genereate(divs[divi], realelem);
+    var div = divs[divi];
+    var realelem = iframeDocument.getElementById(div);
+    this.unhide(div, realelem);
+    this.genereate(div, realelem);
   }
 };
 

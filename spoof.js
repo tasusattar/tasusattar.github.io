@@ -36,7 +36,8 @@ var loadbod = function(page){
 
 var hideall = function(){
   var frameelem = document.getElementById('bod');
-  var iframeDocument = frameelem.contentDocument || frameelem.contentWindow.document;
+  var iframeDocument = frameelem.contentWindow.document;
+  // frameelem.contentDocument || 
   var allkids = iframeDocument.body.children;
   for (var kidi = 0; kidi < allkids.length; kidi++){
     allkids[kidi].style.display = 'none';
