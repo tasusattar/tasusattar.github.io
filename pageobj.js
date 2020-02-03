@@ -201,8 +201,8 @@ Pages.prototype.loadpage = function(){
 
   frame.src = 'selectionpage.html';
 
-  var iframeDocument = frame.contentWindow.document.body;
-  // frame.contentDocument.body || 
+  var iframeDocument = frame.contentWindow.document;
+  // frame.contentDocument.body ||
   var divs = this.gettypestyles();
   for (var divi = 0; divi < divs.length; divi++){
     var div = divs[divi];
