@@ -30,10 +30,6 @@ var hovs = function(id){
   writesth(hoverings[id]);
 };
 
-// var hovprompt = function(){
-//   writesth(prompthover[idiocy]);
-//   idiocy = (idiocy < 2) ? idiocy + 1 : 0;
-// };
 var promptclick = function(){
   writesth(promptchoices[idiocy]);
   idiocy = (idiocy < 2) ? idiocy + 1 : 0;
@@ -62,11 +58,4 @@ var writesth = function(towrite){
   dothedew();
 };
 
-// for (var i = 0; i < allclickable.length; i++){
-//   clickbill = allclickable[i];
-//   clickbill.addEventListener('click', window.parent.choosefirstpage(clickbill.id));
-//
-// }
-
-// prompt.addEventListener('click', )
 writesth(hoverings['opening']);

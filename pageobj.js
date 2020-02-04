@@ -201,15 +201,15 @@ Pages.prototype.loadpage = function(){
 
   frame.src = 'selectionpage.html';
 
-  var iframeDocument = frame.contentWindow.document;
-  // frame.contentDocument.body ||
-  var divs = this.gettypestyles();
-  for (var divi = 0; divi < divs.length; divi++){
-    var div = divs[divi];
-    var realelem = iframeDocument.getElementById(div);
-    this.unhide(div, realelem);
-    this.genereate(div, realelem);
-  }
+  // var iframeDocument = frame.contentWindow.document;
+  // // frame.contentDocument.body ||
+  // var divs = this.gettypestyles();
+  // for (var divi = 0; divi < divs.length; divi++){
+  //   var div = divs[divi];
+  //   var realelem = iframeDocument.getElementById(div);
+  //   this.unhide(div, realelem);
+  //   this.genereate(div, realelem);
+  // }
 };
 
 Pages.prototype.changepgtitle  = function(){

@@ -16,12 +16,12 @@ for (var key in directpg){
 
 var pickedid = 'HOME0';
 var prevpgstack = [];
-var current = directpg[pickedid];
+current = directpg[pickedid];
 
 current.changepgtitle();
 current.loadpage();
 
-choosefirstpage = function(id){
+var choosefirstpage = function(id){
   var pgofchoice = directpg[id];
   loadbod(pgofchoice);
 };
@@ -37,7 +37,7 @@ var loadbod = function(page){
 var hideall = function(){
   var frameelem = document.getElementById('bod');
   var iframeDocument = frameelem.contentWindow.document;
-  // frameelem.contentDocument || 
+  // frameelem.contentDocument ||
   var allkids = iframeDocument.body.children;
   for (var kidi = 0; kidi < allkids.length; kidi++){
     allkids[kidi].style.display = 'none';
