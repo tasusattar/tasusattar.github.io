@@ -7,7 +7,7 @@ hoverings = {
   'PORTFOLIO1' : 'portfolio',
   'MUSINGS2' : 'musings',
   'opening' : 'HI! Tasu here!',
-  'prompter' : "There's really no reason to <b>CLICK ME</b>"
+  'prompter' : "There's really no reason to CLICK ME"
 }
 
 promptchoices = ['nlaksdnas', 'wqdnoiq', 'apdmaspdom'];
@@ -62,11 +62,11 @@ var writesth = function(towrite){
   dothedew();
 };
 
-for (var i = 0; i < allclickable.length; i++){
-  clickbill = allclickable[i];
-  clickbill.addEventListener('click', window.parent.choosefirstpage(clickbill.id));
+// for (var i = 0; i < allclickable.length; i++){
+//   clickbill = allclickable[i];
+//   clickbill.addEventListener('click', window.parent.choosefirstpage(clickbill.id));
+//
+// }
 
-}
-
-prompt.addEventListener('click', )
+// prompt.addEventListener('click', )
 writesth(hoverings['opening']);
