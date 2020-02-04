@@ -45,7 +45,7 @@ var hideall = function(){
 };
 
 var openpage = function(id, elemcoll){
-  var toopen = none;
+  var toopen = null;
   if (elemcoll) {
     toopen = current.findcollectionitem(id);
     loadbod(toopen);
