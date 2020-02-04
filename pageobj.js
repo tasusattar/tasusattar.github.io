@@ -94,7 +94,7 @@ var Pages = function(){
 
         var info = document.createElement('div');
         info.setAttribute("class", "info");
-        info.innerHTML(lelkey);
+        info.innerHTML = lelkey;
         info.setAttribute("onclick", "openpage('"+lelkey+"', "+elemcoll+" )")
         info.onclick = function() {openpage(lelkey, elemcoll);};
         divcontainer.appendChild(info);
