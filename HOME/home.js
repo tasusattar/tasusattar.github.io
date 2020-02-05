@@ -1,11 +1,11 @@
 // event listeners for each bubble. prompter listeners. redirect accordingly using parent.
 
 hoverings = {
-  'ABOUT3' : 'about',
-  'WORK2' : 'work',
-  'TRAVELS1' : 'travel',
-  'PORTFOLIO1' : 'portfolio',
-  'MUSINGS2' : 'musings',
+  'ABOUT' : 'about',
+  'WORK' : 'work',
+  'TRAVELS' : 'travel',
+  'PORTFOLIO' : 'portfolio',
+  'MUSINGS' : 'musings',
   'opening' : 'HI! Tasu here!',
   'prompter' : "There's really no reason to CLICK ME"
 }
