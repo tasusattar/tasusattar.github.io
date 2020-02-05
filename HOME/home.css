@@ -87,7 +87,7 @@ body{
   visibility: hidden;
 }
 
-#WORK2{
+#WORK{
   z-index: 4;
 
   order: 1;
@@ -143,7 +143,7 @@ body{
 
 }
 
-#ABOUT3{
+#ABOUT{
   z-index: 8;
 
   order: 3;
@@ -160,7 +160,7 @@ body{
   background-image: url('../icons/jackie.png');
 }
 
-#PORTFOLIO1{
+#PORTFOLIO{
   z-index: 7;
 
   order: 4;
@@ -176,7 +176,7 @@ body{
   background-color: blue;
 }
 
-#TRAVELS1{
+#TRAVELS{
   z-index: 5;
 
   order: 5;
@@ -192,7 +192,7 @@ body{
 
 }
 
-#MUSINGS2{
+#MUSINGS{
   z-index: 3;
 
   /* flex-grow: 1.5; */
