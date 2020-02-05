@@ -44,10 +44,12 @@ var Pages = function(){
     this.generate = function(divelem, frameelem){
       if (divelem == 'profilepic' && _profile != ''){
         frameelem.style.backgroundImage = _profile;
+        return;
       }
 
       if(divelem == 'bannerpic' && _banner != ''){
         frameelem.style.backgroundImage = _banner;
+        return;
       }
 
       if (divelem == 'description' && _description != ''){
