@@ -38,13 +38,15 @@ var Pages = function(){
     this.generate = function(divelem, frameelem){
       if (divelem == 'profilepic' && _profile != ''){
         unhide(divelem, frameelem);
-        frameelem.style.backgroundImage = _profile;
+        // frameelem.style.backgroundImage = url(_profile) || url('../icons/jackie.png');
+        frameelem.setAttribute("style", ("background-image :url('"+_profile+"'), url('icons/jackie.png')"));
         return;
       }
 
       if(divelem == 'bannerpic' && _banner != ''){
         unhide(divelem, frameelem);
-        frameelem.style.backgroundImage = _banner;
+        // frameelem.style.backgroundImage = url(_banner) || url('../icons/jackie.png');
+        frameelem.setAttribute("style", ("background-image :url(''"+_banner+"'), url('icons/jackie.png')"));
         return;
       }
 
@@ -93,7 +95,7 @@ var Pages = function(){
         bubl.setAttribute("class", bubltag);
         bubl.setAttribute("onclick", "openpage('"+lelkey+"', "+elemcoll+")");
         bubl.onclick = function() {openpage(lelkey, elemcoll);};
-        bubl.setAttribute("style", ("background-image :url("+listchoice[lelkey].getcover()+"), url(icons/jackie.png)"));
+        bubl.setAttribute("style", ("background-image :url('"+listchoice[lelkey].getcover()+"'), url('icons/jackie.png')"));
         divcontainer.appendChild(bubl);
 
         var info = document.createElement('div');
