@@ -90,7 +90,7 @@ var Pages = function(){
         var bubltag = (elemcoll) ? "bubble collection" : "bubble singles";
         bubl.setAttribute("class", bubltag);
         bubl.setAttribute("onclick", "openpage('"+lelkey+"', "+elemcoll+")");
-        bubl.onclick = function() {openpage(lelkey, elemcoll);};
+        // bubl.onclick = function() {openpage(lelkey, elemcoll);};
         bubl.setAttribute("style", ("background-image :url('"+listchoice[lelkey].getcover()+"'), url('icons/jackie.png')"));
         divcontainer.appendChild(bubl);
 
@@ -98,7 +98,7 @@ var Pages = function(){
         info.setAttribute("class", "info");
         info.innerHTML = lelkey;
         info.setAttribute("onclick", "openpage('"+lelkey+"', "+elemcoll+" )")
-        info.onclick = function() {openpage(lelkey, elemcoll);};
+        // info.onclick = function() {openpage(lelkey, elemcoll);};
         divcontainer.appendChild(info);
 
 
