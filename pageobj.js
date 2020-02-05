@@ -112,7 +112,7 @@ var Pages = function(){
 
 
     // Private Setters
-    var setcollections = function(isitcoll){
+    var setcollsing = function(isitcoll){
       // from fullinfo, extract collections
       pathlist = (isitcoll) ? fullinfo['dirs']: fullinfo['files'];
       either = {};
@@ -135,10 +135,9 @@ var Pages = function(){
     // constructor calls
     if (_fullinfo != '' || _fullinfo != {}){
       if (_html == ''){
-        setcollections();
-        setsingles();
+        setcollsing(true);
+        setcollsing(false);
       }
-      settitle();
     }
 
   };
