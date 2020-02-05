@@ -56,12 +56,8 @@ var Pages = function(){
         return;
       }
 
-      // if (divelem != 'listcontainer' && _singles.length > 0){
-      //   var porbpic = _singles[divelem]
-      //   frameelem.style.backgroundImage = porbpic.getfullpath();
-      //   return;
-      // }
       if (divelem == 'listcontainer'){
+        unhide(divelem, frameelem);
         displaylists(frameelem, true);
         displaylists(frameelem, false);
       }
