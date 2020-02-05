@@ -14,7 +14,7 @@ for (var key in directpg){
 }
 
 
-var pickedid = 'HOME0';
+var pickedid = 'HOME';
 var prevpgstack = [];
 current = directpg[pickedid];
 
