@@ -35,24 +35,21 @@ var Pages = function(){
       return _profile;
     };
 
-    this.unhide = function(divelem, frameelem){
-      var styling = (divelem == 'listcontainer') ? 'flex' : 'inline-block';
-      frameelem.style.display = styling;
-    };
-
-
     this.generate = function(divelem, frameelem){
       if (divelem == 'profilepic' && _profile != ''){
+        unhide(divelem, frameelem);
         frameelem.style.backgroundImage = _profile;
         return;
       }
 
       if(divelem == 'bannerpic' && _banner != ''){
+        unhide(divelem, frameelem);
         frameelem.style.backgroundImage = _banner;
         return;
       }
 
       if (divelem == 'description' && _description != ''){
+        unhide(divelem, frameelem);
         frameelem.innerHTML = _description;
         return;
       }
@@ -62,9 +59,11 @@ var Pages = function(){
       //   frameelem.style.backgroundImage = porbpic.getfullpath();
       //   return;
       // }
+      if (divelem == 'listcontainer'){
+        displaylists(frameelem, true);
+        displaylists(frameelem, false);
+      }
 
-      displaylists(frameelem, true);
-      displaylists(frameelem, false);
     };
 
     this.findcollectionitem = function(id){
@@ -114,6 +113,11 @@ var Pages = function(){
 
 
     // Private Setters
+    var unhide = function(divelem, frameelem){
+      var styling = (divelem == 'listcontainer') ? 'flex' : 'inline-block';
+      frameelem.style.display = styling;
+    };
+
     var setcollsing = function(isitcoll){
       // from fullinfo, extract collections
       pathlist = (isitcoll) ? fullinfo['dirs']: fullinfo['files'];
