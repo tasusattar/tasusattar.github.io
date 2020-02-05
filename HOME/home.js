@@ -16,12 +16,12 @@ var waswriting = '';
 var timer;
 
 
-abbott = document.getElementById('ABOUT3');
-wok = document.getElementById('WORK2');
-travs = document.getElementById('TRAVELS1');
+abbott = document.getElementById('ABOUT');
+wok = document.getElementById('WORK');
+travs = document.getElementById('TRAVELS');
 prompt = document.getElementById('prompter');
-port = document.getElementById('PORTFOLIO1');
-muse = document.getElementById('MUSINGS2');
+port = document.getElementById('PORTFOLIO');
+muse = document.getElementById('MUSINGS');
 typewrite = document.getElementById('typewriter');
 
 allclickable = [abbott, wok, travs, port, muse];

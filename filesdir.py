@@ -9,7 +9,11 @@ def recdir(dirpath, title):
         'files': [],
         'dirs': [],
         'dscrp': '',
-        'html': ''
+        'html': '',
+        'profile': '',
+        'banner': '',
+        'cover': ''
+
     }
 
     directory = os.listdir(dirpath)
@@ -18,14 +22,22 @@ def recdir(dirpath, title):
         return outjson
 
     nohijstxtdir = []
+    specialsubs = ['profile.png', 'cover.png', 'banner.jpg']
 
     for subpath in directory:
         fullpath = dirpath + '/' + subpath
+
+        # check for specialsubs
+        for sub in specialsubs:
+            subminus = sub[:-4]
+            if subpath == sub:
+                outjson[subminus] = fullpath
+
         # check if subpath is an .html in which case
         # this is all the info we need
         if subpath[-5:] == '.html':
             outjson['html'] = fullpath
-            return outjson
+            # return outjson
 
         # check if subpath is a .txt for desc or if its not a json
         # in which case add it to filtered list
@@ -35,6 +47,7 @@ def recdir(dirpath, title):
                 data = file.read().replace('\n', '')
                 fulldesc = data
             outjson['dscrp'] = fulldesc
+
         elif (not subpath.startswith('.')) and subpath[-5:] != '.json':
             nohijstxtdir.append(subpath)
 
@@ -60,12 +73,12 @@ dirthouse = 'icons'
 final = recdir(dirthouse, dirthouse)
 
 outson = {
-    'HOME0': {},
-    'PORTFOLIO1': {},
-    'ABOUT3': {},
-    'WORK2': {},
-    'TRAVELS1': {},
-    'MUSINGS2': {}
+    'HOME': {},
+    'PORTFOLIO': {},
+    'ABOUT': {},
+    'WORK': {},
+    'TRAVELS': {},
+    'MUSINGS': {}
 }
 
 for key in outson:

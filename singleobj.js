@@ -54,13 +54,13 @@ var Singles = function(){
       pic = 'imgscreen.png';
       // info
       if (_type == 1){
-        _cov = _cov + pdf;
+        cov = cov + pdf;
       }
       else if (_type == 2){
-        _cov = _cov + vid;
+        cov = cov + vid;
       }
       else{
-        _cov = fullpath;
+        cov = fullpath;
       }
       _cover = cov;
     };

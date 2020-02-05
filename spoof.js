@@ -1,10 +1,10 @@
 directpg = {
-  'HOME0' : null,
-  'ABOUT3' : null,
-  'WORK2' : null,
-  'TRAVELS1': null,
-  'MUSINGS2': null,
-  'PORTFOLIO1': null
+  'HOME' : null,
+  'ABOUT' : null,
+  'WORK' : null,
+  'TRAVELS': null,
+  'MUSINGS': null,
+  'PORTFOLIO': null
 };
 
 

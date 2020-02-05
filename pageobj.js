@@ -2,29 +2,19 @@ var Pages = function(){
 
   function Pages(fullinfo){
     this.backpg = null;
-    _typestyles = {
-      1: ['description', 'listcontainer'],
-      2: ['listcontainer'],
-      3: ['profilepic', 'description'],
-      4: ['bannerpic', 'description']
-    };
 
-    // fullinfo - {'unfiltitle':'', 'dirs':[], 'files':[], 'description':'', 'html':''}
+    // fullinfo - {'unfiltitle':'', 'dirs':[], 'files':[], 'description':'', 'html':'', 'banner': '', 'profile': '', 'cover': ''}
     var _fullinfo = fullinfo;
-    var _title = '';
+    var _title = fullinfo['unfiltitle'];
     var _collections = {};
     var _singles = {};
     var _description = fullinfo['description'];
-    var _type = 1;
-    var _cover = '';
-    var _order = 0;
+    var _cover = fullinfo['cover'];
     var _html = fullinfo['html'];
+    var _banner = fullinfo['banner'];
+    var _profile = fullinfo['profile'];
 
     // Public Methods
-    this.gettypestyles = function(){
-      return _typestyles[_type];
-    };
-
     this.gethtml = function(){
       return _html;
     };
@@ -37,23 +27,40 @@ var Pages = function(){
       return _cover;
     };
 
+    this.getbanner = function(){
+      return _banner;
+    };
+
+    this.getprofile = function(){
+      return _profile;
+    };
+
     this.unhide = function(divelem, frameelem){
       var styling = (divelem == 'listcontainer') ? 'flex' : 'inline-block';
-      // frameelem.style.display = (hidetoggle) ? styling : 'none';
       frameelem.style.display = styling;
     };
 
 
     this.generate = function(divelem, frameelem){
+      if (divelem == 'profilepic' && _profile != ''){
+        frameelem.style.backgroundImage = _profile;
+      }
+
+      if(divelem == 'bannerpic' && _banner != ''){
+        frameelem.style.backgroundImage = _banner;
+      }
+
       if (divelem == 'description' && _description != ''){
         frameelem.innerHTML = _description;
         return;
       }
-      if (divelem != 'listcontainer' && _singles.length > 0){
-        var porbpic = _singles[divelem]
-        frameelem.style.backgroundImage = porbpic.getfullpath();
-        return;
-      }
+
+      // if (divelem != 'listcontainer' && _singles.length > 0){
+      //   var porbpic = _singles[divelem]
+      //   frameelem.style.backgroundImage = porbpic.getfullpath();
+      //   return;
+      // }
+
       displaylists(frameelem, true);
       displaylists(frameelem, false);
     };
@@ -65,13 +72,11 @@ var Pages = function(){
       return _singles[id];
     };
 
+    // Should look like
     // <div class='contentlist'>
     //   <div class='contentcontainer'><div class='bubble collection' id='coll1'></div><div class='info' id='coll1info'>coll1</div></div>
     // </div>
-
     var displaylists = function(frameelem, elemcoll){
-      var listtype = (_type == 1) ? 'contentcontainer' : 'largecontainer';
-      var bubbletype = (_type == 1) ? 'collection' : 'bigcoll';
       var listchoice = (elemcoll) ? _collections : _singles;
 
       var divcontlist = document.createElement("div");
@@ -79,17 +84,15 @@ var Pages = function(){
 
       for (var lelkey in listchoice){
         var divcontainer = document.createElement("div");
-        var containtag = (elemcoll) ? listtype : 'contentcontainer';
+        var containtag = 'contentcontainer';
         divcontainer.setAttribute("class", containtag);
 
         var bubl = document.createElement('div');
-        var bubltag = (elemcoll) ? "bubble "+ bubbletype : "bubble singles";
+        var bubltag = (elemcoll) ? "bubble collection" : "bubble singles";
         bubl.setAttribute("class", bubltag);
         bubl.setAttribute("onclick", "openpage('"+lelkey+"', "+elemcoll+")");
         bubl.onclick = function() {openpage(lelkey, elemcoll);};
-        // bubl.setAttribute("id", lelkey);
         bubl.setAttribute("style", ("background-image :url("+listchoice[lelkey].getcover()+"), url(icons/jackie.png)"));
-
         divcontainer.appendChild(bubl);
 
         var info = document.createElement('div');
@@ -109,70 +112,25 @@ var Pages = function(){
 
 
     // Private Setters
-    var settittypord = function(){
-      // from fullinfo, extract the title
-      unfiltit = fullinfo['unfiltitle'];
-      tit = '';
-      order = -1;
-      type = 1;
-
-      if (!isNaN(unfiltit.charAt(0))){
-        if (!isNaN(unfiltit.charAt(1))){
-          order = parseInt(unfiltit.slice(0,2));
-          unfiltit = unfiltit.slice(2);
-         }
-        else{
-          order = parseInt(unfiltit.slice(0,1));
-          unfiltit = unfiltit.slice(1);
-        }
-      }
-
-      if (!isNaN(unfiltit.charAt(-1))) {
-          type = parseInt(unfiltit.slice(-1));
-          unfiltit = unfiltit.slice(0, -1);
-      }
-
-      tit = unfiltit
-
-      _order = order;
-      _type = type;
-      _title = tit;
-    };
-
-
-    var setcollections = function(){
+    var setcollections = function(isitcoll){
       // from fullinfo, extract collections
-      collpaths = fullinfo['dirs'];
-      collection = {};
+      pathlist = (isitcoll) ? fullinfo['dirs']: fullinfo['files'];
+      either = {};
       // run a function that converts each into its own Page
-      if (collpaths.length == 0) { return }
-      for (var i = 0; i < collpaths.length; i++){
-        subpage = new Pages(collpaths[i]);
-        collection[subpage.gettitle()] = subpage;
+      if (pathlist.length == 0) { return }
+      for (var i = 0; i < pathlist.length; i++){
+        sub = (isitcoll) ? new Pages(pathlist[i]): new Singles(pathlist[i]);
+        either[sub.gettitle()] = sub;
       }
-      _collections = collection;
-    };
 
-    var setsingles = function(){
-      // from fullinfo extract
-      singpathlist = fullinfo['files'];
-      singles = {};
-      if (singpathlist.length == 0) { return }
-      for (var i = 0; i < singpathlist.length; i++){
-        singer = new Singles(singpathlist[i]);
-        singles[singer.gettitle()] = singer;
+      if (isitcoll){
+          _collections = either;
       }
-      _singles = singles;
-    };
+      else{
+        _singles = either;
+      }
 
-    var setcover = function(){
-      // info
-      info = _fullinfo;
-      unfiltit = info['unfiltitle'];
-      cov = '/icons/'+ unfiltit + '.png';
-      _cover = cov;
     };
-
 
     // constructor calls
     if (_fullinfo != '' || _fullinfo != {}){
@@ -180,8 +138,7 @@ var Pages = function(){
         setcollections();
         setsingles();
       }
-      settittypord();
-      setcover();
+      settitle();
     }
 
   };
@@ -201,15 +158,6 @@ Pages.prototype.loadpage = function(){
 
   frame.src = 'selectionpage.html';
 
-  // var iframeDocument = frame.contentWindow.document;
-  // // frame.contentDocument.body ||
-  // var divs = this.gettypestyles();
-  // for (var divi = 0; divi < divs.length; divi++){
-  //   var div = divs[divi];
-  //   var realelem = iframeDocument.getElementById(div);
-  //   this.unhide(div, realelem);
-  //   this.genereate(div, realelem);
-  // }
 };
 
 Pages.prototype.changepgtitle  = function(){
