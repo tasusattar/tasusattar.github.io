@@ -3,12 +3,12 @@ var Pages = function(){
   function Pages(fullinfo){
     this.backpg = null;
 
-    // fullinfo - {'unfiltitle':'', 'dirs':[], 'files':[], 'description':'', 'html':'', 'banner': '', 'profile': '', 'cover': ''}
+    // fullinfo - {'unfiltitle':'', 'dirs':[], 'files':[], 'dscrp':'', 'html':'', 'banner': '', 'profile': '', 'cover': ''}
     var _fullinfo = fullinfo;
     var _title = fullinfo['unfiltitle'];
     var _collections = {};
     var _singles = {};
-    var _description = fullinfo['description'];
+    var _description = fullinfo['dscrp'];
     var _cover = fullinfo['cover'];
     var _html = fullinfo['html'];
     var _banner = fullinfo['banner'];
