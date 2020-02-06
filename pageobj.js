@@ -94,7 +94,7 @@ var Pages = function(){
 
           var colscreen = document.createElement('colorscreen');
           var allcolors = ['blue', 'green', 'red', 'yellow', 'purple'];
-          var randcol = allcolors[Math.floor(Math.random()*this.colors.length)];
+          var randcol = allcolors[Math.floor(Math.random()*allcolors.length)];
           colscreen.setAttribute("class", "coloredscreen")
           colscreen.setAttribute('style', ('background-color: ' + randcol));
         }
