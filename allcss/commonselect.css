@@ -154,6 +154,15 @@ body{
 
 }
 
+.coloredscreen{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
 .info{
   display: inline-block;
   position: relative;

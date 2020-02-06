@@ -2,12 +2,6 @@ var Singles = function(){
 
   function Singles(fullpath){
 
-    this.colors = ['blue', 'green', 'red', 'yellow', 'purple'];
-    this.pickrandomcolor = function(){
-      var col = this.colors[Math.floor(Math.random()*this.colors.length)];
-      return col;
-    };
-
     // fullpath - {'/asdas/sadas.jpg'}
     var _fullpath = fullpath;
     var _title = '';
@@ -49,9 +43,9 @@ var Singles = function(){
 
     var setcover = function(){
       cov = '/icons/';
-      pdf = 'pscreen.png';
-      vid = 'vscreen.png';
-      pic = 'imgscreen.png';
+      pdf = 'subject.png';
+      vid = 'movie.png';
+      pic = 'images.png';
       // info
       if (_type == 1){
         cov = cov + pdf;

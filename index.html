@@ -24,20 +24,37 @@
     <div id='header'>
       <div id='symblcont'><img id='symbl' src='icons/symbl.png'></img></div>
       <div id='title'></div>
-      <div id='backbtn'><span id='bac'>&#8624;</span></div>
+      <div id='backbtn'><img id='bac' src='icons/arrowback.png'>
+        <!-- &#8624;</span> -->
+      </div>
     </div>
 
     <iframe id='bod'></iframe>
 
     <div id='foot'>
-      <div id='navdirectory'>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>WORK</li>
-        <li>PORTFOLIO</li>
-        <li>TRAVELS</li>
-        <li>MUSINGS</li>
-      </div>
+      <ul class='footlist' id='navdirectory'>
+        <li onclick="choosefirstpage('HOME')">HOME</li>
+        <li onclick="choosefirstpage('ABOUT')">ABOUT ME</li>
+        <li onclick="choosefirstpage('WORK')">WORK</li>
+        <li onclick="choosefirstpage('PORTFOLIO')">PORTFOLIO</li>
+        <li onclick="choosefirstpage('TRAVELS')">TRAVELS</li>
+        <li onclick="choosefirstpage('MUSINGS')">THOUGHTS</li>
+        <li><h7></h7></li>
+        <li><a href="onlineresume.pdf" target="_blank">RESUME</a></li>
+        <li><a href="https://www.instagram.com/tasusattar/" target="_blank">INSTAGRAM</a></li>
+        <li><a href="https://github.com/tasusattar" target="_blank">GITHUB</a></li>
+      </ul>
+
+      <ul class='footlist' id='footcontact'>
+        <li><h3>TASAWAR SHAFAT SATTAR</h3></li>
+        <li><img src='icons/email.png'> <span>tasawarsattar22@gmail.com</span></li>
+        <li><img src='icons/phone.png'> <span>+1 (980) 238 9722</span></li>
+        <li><img src='icons/language.png'> <span>Bangladeshi & Canadian</span></li>
+        <li><img src='icons/location.png'> <span>Toronto, ON</span></li>
+        <li></li>
+      </ul>
+
+
     </div>
   </div>
 

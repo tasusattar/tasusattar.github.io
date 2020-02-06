@@ -87,18 +87,28 @@ var Pages = function(){
         divcontainer.setAttribute("class", containtag);
 
         var bubl = document.createElement('div');
-        var bubltag = (elemcoll) ? "bubble collection" : "bubble singles";
+
+        var bubltag = "bubble singles";
+        if (elemcoll) {
+          bubltag = "bubble collection";
+
+          var colscreen = document.createElement('colorscreen');
+          var allcolors = ['blue', 'green', 'red', 'yellow', 'purple'];
+          var randcol = allcolors[Math.floor(Math.random()*this.colors.length)];
+          colscreen.setAttribute("class", "coloredscreen")
+          colscreen.setAttribute('style', ('background-color: ' + randcol));
+        }
+        // var bubltag = (elemcoll) ? "bubble collection" : "bubble singles";
         bubl.setAttribute("class", bubltag);
         bubl.setAttribute("onclick", "window.parent.openpage('"+lelkey+"', "+elemcoll+")");
-        // bubl.onclick = function() {openpage(lelkey, elemcoll);};
         bubl.setAttribute("style", ("background-image :url('"+listchoice[lelkey].getcover()+"'), url('icons/jackie.png')"));
+
         divcontainer.appendChild(bubl);
 
         var info = document.createElement('div');
         info.setAttribute("class", "info");
         info.innerHTML = lelkey;
         info.setAttribute("onclick", "window.parent.openpage('"+lelkey+"', "+elemcoll+" )")
-        // info.onclick = function() {openpage(lelkey, elemcoll);};
         divcontainer.appendChild(info);
 
 
@@ -166,5 +176,5 @@ Pages.prototype.loadpage = function(){
 Pages.prototype.changepgtitle  = function(){
   var doctit = document.getElementById('title');
   tit = this.gettitle();
-  doctit.innerHTML = tit;
+  doctit.innerHTML = (tit != 'HOME') ? tit : '';
 };

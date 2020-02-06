@@ -7,6 +7,9 @@ directpg = {
   'PORTFOLIO': null
 };
 
+symbol = document.getElementById('symbl');
+backbutt = document.getElementById('bac');
+
 
 // Make Pages and store in directpg
 for (var key in directpg){
@@ -18,10 +21,11 @@ var pickedid = 'HOME';
 var prevpgstack = [];
 current = directpg[pickedid];
 
-current.changepgtitle();
+// current.changepgtitle();
 current.loadpage();
 
 var choosefirstpage = function(id){
+  backbutt.style.display = 'block';
   var pgofchoice = directpg[id];
   loadbod(pgofchoice);
 };
@@ -55,6 +59,23 @@ var openpage = function(id, elemcoll){
     toopen.display();
   }
 };
+
+var goback = function(){
+  var lstpg = prevpgstack.pop();
+  if (lstpg != undefined){
+    current = lstpg;
+    current.loadpage();
+    current.changepgtitle();
+  }
+  else{
+    backbutt.style.display = 'none';
+  }
+};
+
+
+// Header js
+symbol.setAttribute('onclick', "choosefirstpage('HOME')");
+backbutt.setAttribute('onclick', "goback()");
 
 
 console.log('why are you here?');
