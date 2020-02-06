@@ -156,6 +156,7 @@ body{
 
 .coloredscreen{
   position: absolute;
+  border-radius: 60%;
   height: 100%;
   width: 100%;
   top: 0;
