@@ -59,6 +59,11 @@ var Singles = function(){
       _cover = cov;
     };
 
+    var settitle = function(){
+      var lastslashindex = _fullpath.lastIndexOf('/');
+      _title = _fullpath.slice(lastslashindex+1, -4);
+    };
+
     settype();
     setcover();
 

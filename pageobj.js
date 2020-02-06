@@ -97,6 +97,7 @@ var Pages = function(){
           var randcol = allcolors[Math.floor(Math.random()*allcolors.length)];
           colscreen.setAttribute("class", "coloredscreen")
           colscreen.setAttribute('style', ('background-color: ' + randcol));
+          bubl.appendChild(colscreen);
         }
         // var bubltag = (elemcoll) ? "bubble collection" : "bubble singles";
         bubl.setAttribute("class", bubltag);
