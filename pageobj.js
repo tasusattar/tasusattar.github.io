@@ -128,12 +128,12 @@ var Pages = function(){
 
     var setcollsing = function(isitcoll){
       // from fullinfo, extract collections
-      pathlist = (isitcoll) ? fullinfo['dirs']: fullinfo['files'];
-      either = {};
+      var pathlist = (isitcoll) ? fullinfo['dirs']: fullinfo['files'];
+      var either = {};
       // run a function that converts each into its own Page
       if (pathlist.length == 0) { return }
       for (var i = 0; i < pathlist.length; i++){
-        sub = (isitcoll) ? new Pages(pathlist[i]): new Singles(pathlist[i]);
+        var sub = (isitcoll) ? new Pages(pathlist[i]) : new Singles(pathlist[i]);
         either[sub.gettitle()] = sub;
       }
 
