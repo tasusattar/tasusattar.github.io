@@ -5,11 +5,12 @@
   width: 98vw;
   overflow: hidden;
   z-index: 10;
-  color: white;
   margin: 0 0.5%;
   left: 0.5%;
-  border-bottom: 1px solid white;
-  background-image: var(--bgcolor);
+  border-bottom: 0.5px groove var(--db);
+  /* background-image: var(--bgcolor); */
+  background-color: var(--dark);
+  color: var(--dp);
 }
 
 #symblcont{
@@ -31,15 +32,18 @@
   margin: 0.5% 2%;
 
   border-radius: 60%;
-  /* border-style: solid;
-  border-width: thin; */
+  border-style: solid;
+  border-width: thin;
+  border-color: var(--dp);
 
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 3px 5px 0 rgba(0,0,0,0.15);
+  background-color: var(--dp);
 }
 
 #symbl:hover {
-cursor: pointer;
-opacity: 0.7;
+  cursor: pointer;
+  opacity: 0.7;
+  border-color: var(--np);
 }
 
 #symbl:active {
@@ -92,11 +96,14 @@ transform: translateY(1px);
   font-size: 2em;
 
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 3px 5px 0 rgba(0,0,0,0.15);
+  color: var(--dp);
+
 }
 
 #bac:hover {
   cursor: pointer;
   opacity: 0.7;
+  color: var(--dp);
 }
 
 #bac:active {

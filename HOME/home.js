@@ -45,7 +45,7 @@ var writesth = function(towrite){
   waswriting = towrite;
   typewrite.innerHTML = '';
   var i = 0;
-  speed = 50;
+  speed = 30;
 
   var dothedew = function(){
     if (i < towrite.length){

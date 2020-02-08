@@ -54,9 +54,10 @@ body{
   border-radius: 50%;
   display: flex;
   position: relative;
-  background-color: white;
+  /* background-color: white; */
   border-style: solid;
-  border-color: black;
+  border-width: thin;
+  /* border-color: black; */
   margin: 1% 2%;
 
   text-align: center;
@@ -99,7 +100,8 @@ body{
   /* padding-bottom: 15%; */
 
   right: 25%;
-  background-color: red;
+  background-color: var(--nr);
+  border-color: var(--nr);
 }
 
 #prompter{
@@ -117,6 +119,10 @@ body{
   left: 0;
   margin-left: 0;
   top: 1%;
+
+  background-color: var(--dark);
+  color: var(--g2);
+  border-color: var(--dark);
 }
 
 #typewritercontainer{
@@ -157,7 +163,9 @@ body{
   right: 0;
   margin-right: 0;
 
-  background-image: url('../icons/jackie.png');
+  /* background-image: url('../icons/jackie.png'); */
+  background-color: var(--ny);
+  border-color: var(--ny);
 }
 
 #PORTFOLIO{
@@ -173,7 +181,8 @@ body{
   /* padding-bottom: 18%; */
 
   left: 10%;
-  background-color: blue;
+  background-color: var(--b2);
+  border-color: var(--b2);
 }
 
 #TRAVELS{
@@ -188,7 +197,8 @@ body{
   /* padding-bottom: 20%; */
 
   right: 25%;
-  background-color: green;
+  background-color: var(--ng);
+  border-color: var(--ng);
 
 }
 
@@ -205,5 +215,6 @@ body{
 
   left: 2%;
   bottom: 1%;
-  background-color: purple;
+  background-color: var(--np);
+  border-color: var(--np);
 }
