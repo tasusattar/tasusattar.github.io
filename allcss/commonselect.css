@@ -46,7 +46,7 @@ body{
   margin: 2%;
   padding: 1%;
 
-  background-image: url('../icons/jackie.png');
+  /* background-image: url('../icons/jackie.png'); */
   background-position: center;
   background-size: cover;
 
@@ -63,7 +63,7 @@ body{
   margin: 2%;
   padding: 1%;
 
-  background-image: url('../icons/jackie.png');
+  /* background-image: url('../icons/jackie.png'); */
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@ body{
   display: none;
   /* display: flex; */
   width: 98.5%;
-  margin: 0.5% 1%;
+  margin: 0.5%;
   flex-direction: column;
   flex-wrap: nowrap;
 
@@ -100,7 +100,7 @@ body{
   z-index: 1;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2%;
+  margin: 2% 1%;
 }
 
 .contentcontainer{
@@ -112,7 +112,7 @@ body{
   z-index: 1;
   padding: 1%;
   margin: 10px 20px;
-  background-color: green;
+  /* background-color: green; */
   justify-content: center;
   align-items: center;
   align-content: center;
