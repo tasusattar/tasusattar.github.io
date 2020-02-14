@@ -79,7 +79,8 @@ body{
   font-size: 1.2em;
   margin: 3% 8%;
   padding: 1.5% 1%;
-  border-bottom: thin groove white;
+  border-top: thin groove #0e1111;
+  border-bottom: thin groove #0e1111;
   letter-spacing: 0.1em;
   width: -webkit-fill-available;
 

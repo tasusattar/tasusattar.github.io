@@ -151,7 +151,8 @@ var Pages = function(){
 
     var unhide = function(divelem, frameelem){
       var styling = (divelem == 'listcontainer') ? 'flex' : 'block';
-      frameelem.style.display = styling;
+      // frameelem.style.display = styling;
+      frameelem.setAttribute("style", ("display: "+styling));
     };
 
     var setcollsing = function(isitcoll){
