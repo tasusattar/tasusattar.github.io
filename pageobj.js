@@ -96,7 +96,7 @@ var Pages = function(){
         if (elemcoll) {
           bubltag = "bubble collection";
 
-          // var colscreen = document.createElement('colorscreen');
+          var colscreen = document.createElement('colorscreen');
           // var allcolors = ['blue', 'green', 'red', 'purple'];
           // var randcol = allcolors[Math.floor(Math.random()*allcolors.length)];
           var randcol = setrandomcolor();
