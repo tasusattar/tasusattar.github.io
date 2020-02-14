@@ -42,14 +42,16 @@ var Pages = function(){
     this.generate = function(divelem, frameelem){
       if (divelem == 'profilepic' && _profile != ''){
         unhide(divelem, frameelem);
-        frameelem.style.backgroundImage = url(_profile);
+        var profilelinks = "url('"+_profile+"'), url('icons/jackie.png')"
+        frameelem.style.backgroundImage = profilelinks;
         // frameelem.setAttribute("style", ("background-image :url('"+_profile+"'), url('icons/jackie.png')"));
         return;
       }
 
       if(divelem == 'bannerpic' && _banner != ''){
         unhide(divelem, frameelem);
-        frameelem.style.backgroundImage = url(_banner);
+        var bannerlinks = "url('"+_banner+"'), url('icons/jackie.png')"
+        frameelem.style.backgroundImage = bannerlnks;
         // frameelem.setAttribute("style", ("background-image :url(''"+_banner+"'), url('icons/jackie.png')"));
         return;
       }
