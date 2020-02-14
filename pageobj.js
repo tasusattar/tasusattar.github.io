@@ -41,27 +41,27 @@ var Pages = function(){
 
     this.generate = function(divelem, frameelem){
       if (divelem == 'profilepic' && _profile != ''){
-        // unhide(divelem, frameelem);
+        unhide(divelem, frameelem);
         // frameelem.style.backgroundImage = url(_profile) || url('../icons/jackie.png');
         frameelem.setAttribute("style", ("background-image :url('"+_profile+"'), url('icons/jackie.png')"));
         return;
       }
 
       if(divelem == 'bannerpic' && _banner != ''){
-        // unhide(divelem, frameelem);
+        unhide(divelem, frameelem);
         // frameelem.style.backgroundImage = url(_banner) || url('../icons/jackie.png');
         frameelem.setAttribute("style", ("background-image :url(''"+_banner+"'), url('icons/jackie.png')"));
         return;
       }
 
       if (divelem == 'description' && _description != ''){
-        // unhide(divelem, frameelem);
+        unhide(divelem, frameelem);
         frameelem.innerHTML = _description;
         return;
       }
 
       if (divelem == 'listcontainer'){
-        // unhide(divelem, frameelem);
+        unhide(divelem, frameelem);
         displaylists(frameelem, true);
         displaylists(frameelem, false);
       }
@@ -149,8 +149,8 @@ var Pages = function(){
 
     };
 
-    this.unhide = function(divelem, frameelem){
-      var styling = (divelem == 'listcontainer') ? 'flex' : 'inline-block';
+    var unhide = function(divelem, frameelem){
+      var styling = (divelem == 'listcontainer') ? 'flex' : 'block';
       frameelem.style.display = styling;
     };
 

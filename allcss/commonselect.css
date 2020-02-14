@@ -72,7 +72,7 @@ body{
 #description{
   display: none;
   /* display: inline-block; */
-  color: white;
+  color: #0e1111;
   align-self: center;
   text-align: justify;
   text-indent: 2%;

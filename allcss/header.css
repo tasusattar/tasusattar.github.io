@@ -7,10 +7,10 @@
   z-index: 10;
   margin: 0 0.5%;
   left: 0.5%;
-  border-bottom: 0.5px groove var(--db);
+  /* border-bottom: 0.5px groove var(--db); */
   /* background-image: var(--bgcolor); */
   background-color: var(--dark);
-  color: var(--dp);
+  color: var(--y2);
 }
 
 #symblcont{

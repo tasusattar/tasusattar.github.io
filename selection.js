@@ -7,8 +7,8 @@ var divs = ['profilepic', 'bannerpic', 'description', 'listcontainer'];
 for (var divi = 0; divi < divs.length; divi++){
   var div = divs[divi];
   var realelem = document.getElementById(div);
-  var styling = (div == 'listcontainer') ? 'flex' : 'inline-block';
-  realelem.style.display = styling;
+  // var styling = (div == 'listcontainer') ? 'flex' : 'inline-block';
+  // realelem.style.display = styling;
   // thispg.unhide(div, realelem);
   thispg.generate(div, realelem);
 }
