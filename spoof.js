@@ -62,14 +62,14 @@ var openpage = function(id, elemcoll){
 
 var goback = function(){
   var lstpg = prevpgstack.pop();
-  if (lstpg != undefined){
-    current = lstpg;
-    current.loadpage();
-    current.changepgtitle();
+
+  if (prevpgstack.length == 0) {
+      backbutt.style.display = 'none';
   }
-  else{
-    backbutt.style.display = 'none';
-  }
+
+  current = lstpg;
+  current.loadpage();
+  current.changepgtitle();
 };
 
 

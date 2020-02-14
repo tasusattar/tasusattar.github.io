@@ -88,8 +88,8 @@ transform: translateY(1px);
 }
 
 #bac{
-  display: block;
-  /* display: none; */
+  /* display: block; */
+  display: none;
   border-radius: 50%;
   height: 80%;
   margin: 10%;
