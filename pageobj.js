@@ -13,6 +13,7 @@ var Pages = function(){
     var _html = fullinfo['html'];
     var _banner = fullinfo['banner'];
     var _profile = fullinfo['profile'];
+    var _pickedcolors = [];
 
     // Public Methods
     this.gethtml = function(){
@@ -24,6 +25,9 @@ var Pages = function(){
     };
 
     this.getcover = function(){
+      if (_cover == '' && _profile != ''){
+        _cover = _profile;
+      }
       return _cover;
     };
 
@@ -92,9 +96,10 @@ var Pages = function(){
         if (elemcoll) {
           bubltag = "bubble collection";
 
-          var colscreen = document.createElement('colorscreen');
-          var allcolors = ['blue', 'green', 'red', 'yellow', 'purple'];
-          var randcol = allcolors[Math.floor(Math.random()*allcolors.length)];
+          // var colscreen = document.createElement('colorscreen');
+          // var allcolors = ['blue', 'green', 'red', 'purple'];
+          // var randcol = allcolors[Math.floor(Math.random()*allcolors.length)];
+          var randcol = setrandomcolor();
           colscreen.setAttribute("class", "coloredscreen")
           colscreen.setAttribute('style', ('background-color: ' + randcol));
           bubl.appendChild(colscreen);
@@ -122,6 +127,28 @@ var Pages = function(){
 
 
     // Private Setters
+    var checkrefreshcolors = function(){
+      if (_pickedcolors.length == 4){
+        _pickedcolors = [];
+      }
+    };
+
+    var setrandomcolor = function(){
+      var stylesheet = getComputedStyle(document.body);
+      var colors = [stylesheet.getPropertyValue('--dp'), stylesheet.getPropertyValue('--ng'), stylesheet.getPropertyValue('--db'), stylesheet.getPropertyValue('--r2')];
+      var randi = Math.floor(Math.random()*4);
+
+      if (_pickedcolors.includes(randi)){
+        checkrefreshcolors();
+        return setrandomcolor();
+      }
+      else {
+        _pickedcolors.push(randi);
+        return colors[randi];
+      }
+
+    };
+
     var unhide = function(divelem, frameelem){
       var styling = (divelem == 'listcontainer') ? 'flex' : 'inline-block';
       frameelem.style.display = styling;

@@ -81,6 +81,7 @@ body{
   padding: 1.5% 1%;
   border-bottom: thin groove white;
   letter-spacing: 0.1em;
+  width: -webkit-fill-available;
 
 }
 
@@ -169,6 +170,6 @@ body{
   position: relative;
   width: auto;
   height: 7%;
-  margin: 1%
+  margin: 1%;
   color: white;
 }

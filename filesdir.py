@@ -28,20 +28,23 @@ def recdir(dirpath, title):
         fullpath = dirpath + '/' + subpath
 
         # check for specialsubs
-        for sub in specialsubs:
-            subminus = sub[:-4]
-            if subpath == sub:
-                outjson[subminus] = fullpath
+        # for sub in specialsubs:
+        #     subminus = sub[:-4]
+        #     if subpath == sub:
+        #         outjson[subminus] = fullpath
+        if subpath in specialsubs:
+            subminus = subpath[:-4]
+            outjson[subminus] = fullpath
 
         # check if subpath is an .html in which case
         # this is all the info we need
-        if subpath[-5:] == '.html':
+        elif (subpath[-5:] == '.html'):
             outjson['html'] = fullpath
             # return outjson
 
         # check if subpath is a .txt for desc or if its not a json
         # in which case add it to filtered list
-        if subpath[-4:] == '.txt':
+        elif (subpath[-4:] == '.txt'):
             fulldesc = ''
             with open(fullpath, 'r') as file:
                 data = file.read().replace('\n', '')

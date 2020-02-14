@@ -24,7 +24,7 @@ html, body{
   z-index: 1;
 
   /* background-image: url('../icons/backtest.gif'); */
-  background-color: var(--dp);
+  background-color: var(--ny);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

@@ -17,7 +17,7 @@
   display: inline-block;
   position: relative;
   height: 100%;
-  width: 7%;
+  width: 10vmin;
   overflow: hidden;
 
   left: 0.5%;
@@ -27,23 +27,25 @@
 #symbl{
   display: block;
   position: relative;
-  height: 95%;
-  width: 70%;
+  top: 1%;
+  height: 0;
+  padding-bottom: 95%;
+  width: 90%;
   margin: 0.5% 2%;
 
   border-radius: 60%;
-  border-style: solid;
+  /* border-style: solid;
   border-width: thin;
-  border-color: var(--dp);
+  border-color: var(--dp); */
 
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 3px 5px 0 rgba(0,0,0,0.15);
-  background-color: var(--dp);
+  background-color: var(--ny);
 }
 
 #symbl:hover {
   cursor: pointer;
   opacity: 0.7;
-  border-color: var(--np);
+  /* border-color: var(--np); */
 }
 
 #symbl:active {
@@ -79,7 +81,7 @@ transform: translateY(1px);
   display: inline-block;
   position: absolute;
   height: 100%;
-  width: 5%;
+  width: 10vmin;
   overflow: hidden;
 
   right: 0;
@@ -89,7 +91,8 @@ transform: translateY(1px);
   display: block;
   /* display: none; */
   border-radius: 50%;
-  margin: 10% 20%;
+  height: 80%;
+  margin: 10%;
   justify-content: center;
   align-self: center;
   align-items: center;

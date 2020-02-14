@@ -117,7 +117,7 @@ body{
   /* padding-bottom: 15%; */
 
   right: 25%;
-  background-color: var(--nr);
+  background-color: var(--r2);
   /* border-color: var(--nr); */
 }
 
@@ -180,7 +180,7 @@ body{
   right: 0;
   margin-right: 0;
 
-  background-color: var(--ny);
+  /* background-color: var(--ny); */
   background-image: url('../icons/jackie.png');
   /* border-color: var(--ny); */
 }
@@ -198,7 +198,7 @@ body{
   /* padding-bottom: 18%; */
 
   left: 10%;
-  background-color: var(--b2);
+  background-color: var(--db);
   /* border-color: var(--b2); */
 }
 
@@ -232,6 +232,6 @@ body{
 
   left: 2%;
   bottom: 1%;
-  background-color: var(--np);
+  background-color: var(--dp);
   /* border-color: var(--np); */
 }
