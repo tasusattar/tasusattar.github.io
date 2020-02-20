@@ -2,7 +2,7 @@
 
 hoverings = {
   'ABOUT' : 'ABOUT: Want to learn a little about me?',
-  'WORK' : "WORK: From fundraising for charities to teaching kids how to code, I have all sorts of experience.",
+  'WORK' : "WORK: From fundraising for charities to teaching kids how to code, I have a range of experience.",
   'TRAVELS' : 'TRAVELS: I want to see the world!',
   'PORTFOLIO' : "PORTFOLIO: Here you'll find all my whacky, colourful and vibrant pieces.",
   'MUSINGS' : 'A space for my reflections, thoughts and ideas.',
