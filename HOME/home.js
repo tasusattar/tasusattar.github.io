@@ -2,15 +2,15 @@
 
 hoverings = {
   'ABOUT' : 'ABOUT: Want to learn a little about me?',
-  'WORK' : "WORK: From fundraising for charities to teaching kids how to code, I have a range of experience.",
+  'WORK' : "WORK: From fundraising for charities to teaching kids how to code, stuff I've done professionally.",
   'TRAVELS' : 'TRAVELS: I want to see the world!',
   'PORTFOLIO' : "PORTFOLIO: Here you'll find all my whacky, colourful and vibrant pieces.",
   'MUSINGS' : 'A space for my reflections, thoughts and ideas.',
-  'opening' : "Hi! I'm Tasawar Sattar (Tasu). Welcome to my website.",
+  'opening' : "Hi! I'm Tasawar Sattar (Tasu). Welcome to my website. &#128578",
   'prompter' : "There's really no reason to CLICK ME"
-}
+};
 
-promptchoices = ["There's no prize if you CLICK ME", "You're wasting your time every time you CLICK ME", "Please don't CLICK ME"];
+promptchoices = ["There's no prize if you CLICK ME", "You're wasting your time every time you CLICK ME", "Please don't CLICK ME... again"];
 var idiocy = 0;
 var waswriting = '';
 var timer;
