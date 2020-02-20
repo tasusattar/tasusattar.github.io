@@ -4,7 +4,7 @@ hoverings = {
   'ABOUT' : 'ABOUT: Want to learn a little about me?',
   'WORK' : "WORK: From fundraising for charities to teaching kids how to code, I have all sorts of experience.",
   'TRAVELS' : 'TRAVELS: I want to see the world!',
-  'PORTFOLIO' : "This is my Portfolio. Here you'll find all my whacky and vibrant works.",
+  'PORTFOLIO' : "PORTFOLIO: Here you'll find all my whacky, colourful and vibrant pieces.",
   'MUSINGS' : 'A space for my reflections, thoughts and ideas.',
   'opening' : "Hi! I'm Tasawar Sattar (Tasu). Welcome to my website.",
   'prompter' : "There's really no reason to CLICK ME"
