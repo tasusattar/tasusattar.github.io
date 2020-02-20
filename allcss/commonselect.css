@@ -172,5 +172,5 @@ body{
   width: auto;
   height: 7%;
   margin: 1%;
-  color: white;
+  color: var(--dark);
 }

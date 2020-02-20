@@ -1,9 +1,9 @@
 // event listeners for each bubble. prompter listeners. redirect accordingly using parent.
 
 hoverings = {
-  'ABOUT' : 'Want to learn a little about me?',
-  'WORK' : "This is all my real work experience - from fundraising from for charities to teaching kids how to code.",
-  'TRAVELS' : 'I want to travel the world!',
+  'ABOUT' : 'ABOUT: Want to learn a little about me?',
+  'WORK' : "WORK: From fundraising for charities to teaching kids how to code, I have all sorts of experience.",
+  'TRAVELS' : 'TRAVELS: I want to see the world!',
   'PORTFOLIO' : "This is my Portfolio. Here you'll find all my whacky and vibrant works.",
   'MUSINGS' : 'A space for my reflections, thoughts and ideas.',
   'opening' : 'Hi! Welcome to my website. My name is Tasawar Sattar, but you can call me Tasu.',
