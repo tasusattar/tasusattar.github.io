@@ -10,7 +10,7 @@
   /* border-bottom: 0.5px groove var(--db); */
   /* background-image: var(--bgcolor); */
   background-color: var(--dark);
-  color: var(--y2);
+  color: var(--dr);
 }
 
 #symblcont{
@@ -28,8 +28,9 @@
   display: block;
   position: relative;
   top: 1%;
-  height: 0;
-  padding-bottom: 95%;
+  /* height: 0; */
+  /* padding-bottom: 95%; */
+  height: 9.7vmin;
   width: 90%;
   margin: 0.5% 2%;
 
@@ -39,7 +40,7 @@
   border-color: var(--dp); */
 
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 3px 5px 0 rgba(0,0,0,0.15);
-  background-color: var(--ny);
+  background-color: var(--r2);
 }
 
 #symbl:hover {
@@ -56,11 +57,12 @@ transform: translateY(1px);
 #title{
   display: inline-flex;
   position: relative;
-  height: 100%;
+  margin: 1% 1%;
+  height: 90%;
   width: 82%;
   overflow-x: auto;
   overflow-y: hidden;
-  font-size: 3em;
+  font-size: 2em;
 }
 /*
 .tits{
@@ -99,14 +101,14 @@ transform: translateY(1px);
   font-size: 2em;
 
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 3px 5px 0 rgba(0,0,0,0.15);
-  color: var(--dp);
+  /* color: var(--dp); */
 
 }
 
 #bac:hover {
   cursor: pointer;
   opacity: 0.7;
-  color: var(--dp);
+  /* color: var(--dp); */
 }
 
 #bac:active {

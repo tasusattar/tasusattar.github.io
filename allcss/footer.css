@@ -44,7 +44,7 @@ a{
   text-decoration: none;
   /* font-size: 0.8em; */
   font-size: 70%;
-  color: var(--y2);
+  color: var(--red);
 }
 
 #navdirectory{
@@ -65,7 +65,7 @@ a{
 #navdirectory li:hover{
   opacity: 0.7;
   text-decoration: underline;
-  color: var(--y2);
+  color: var(--red);
 }
 
 #footcontact{

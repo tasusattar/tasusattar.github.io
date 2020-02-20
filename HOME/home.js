@@ -1,16 +1,16 @@
 // event listeners for each bubble. prompter listeners. redirect accordingly using parent.
 
 hoverings = {
-  'ABOUT' : 'about',
-  'WORK' : 'work',
-  'TRAVELS' : 'travel',
-  'PORTFOLIO' : 'portfolio',
-  'MUSINGS' : 'musings',
-  'opening' : 'HI! Tasu here!',
+  'ABOUT' : 'Want to learn a little about me?',
+  'WORK' : "This is all my real work experience - from fundraising from for charities to teaching kids how to code.",
+  'TRAVELS' : 'I want to travel the world!',
+  'PORTFOLIO' : "This is my Portfolio. Here you'll find all my whacky and vibrant works.",
+  'MUSINGS' : 'A space for my reflections, thoughts and ideas.',
+  'opening' : 'Hi! Welcome to my website. My name is Tasawar Sattar, but you can call me Tasu.',
   'prompter' : "There's really no reason to CLICK ME"
 }
 
-promptchoices = ['nlaksdnas', 'wqdnoiq', 'apdmaspdom'];
+promptchoices = ["There's no prize if you CLICK ME", "You're wasting your time every time you CLICK ME", "Please don't CLICK ME"];
 var idiocy = 0;
 var waswriting = '';
 var timer;

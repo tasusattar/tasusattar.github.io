@@ -117,7 +117,7 @@ body{
   /* padding-bottom: 15%; */
 
   right: 25%;
-  background-color: var(--r2);
+  background-color: var(--dy);
   /* border-color: var(--nr); */
 }
 
@@ -129,7 +129,7 @@ body{
   flex-shrink: 2;
   align-self: flex-start;
 
-  width: 75%;
+  width: 85%;
   height: 17vmax;
   /* padding-bottom: 15%; */
 
@@ -198,7 +198,7 @@ body{
   /* padding-bottom: 18%; */
 
   left: 10%;
-  background-color: var(--db);
+  background-color: var(--b2);
   /* border-color: var(--b2); */
 }
 
