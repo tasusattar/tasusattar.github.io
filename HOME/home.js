@@ -6,7 +6,7 @@ hoverings = {
   'TRAVELS' : 'TRAVELS: I want to see the world!',
   'PORTFOLIO' : "This is my Portfolio. Here you'll find all my whacky and vibrant works.",
   'MUSINGS' : 'A space for my reflections, thoughts and ideas.',
-  'opening' : 'Hi! Welcome to my website. My name is Tasawar Sattar, but you can call me Tasu.',
+  'opening' : "Hi! I'm Tasawar Sattar (Tasu). Welcome to my website.",
   'prompter' : "There's really no reason to CLICK ME"
 }
 
