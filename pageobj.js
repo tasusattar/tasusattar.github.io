@@ -116,12 +116,14 @@ var Pages = function(){
         var info = document.createElement('div');
         info.setAttribute("class", "info");
         info.innerHTML = lelkey;
-        info.setAttribute("onclick", "window.parent.openpage('"+lelkey+"', "+elemcoll+" )")
-        divcontainer.appendChild(info);
+        info.setAttribute("onclick", "window.parent.openpage('"+lelkey+"', "+elemcoll+" )");
+        if (elemcoll){divcontainer.appendChild(info);}
+        // divcontainer.appendChild(info);
 
 
         divcontlist.appendChild(divcontainer);
       }
+      // end of for loop
 
       frameelem.appendChild(divcontlist);
 
@@ -137,7 +139,7 @@ var Pages = function(){
 
     var setrandomcolor = function(){
       var stylesheet = getComputedStyle(document.body);
-      var colors = [stylesheet.getPropertyValue('--dp'), stylesheet.getPropertyValue('--ng'), stylesheet.getPropertyValue('--db'), stylesheet.getPropertyValue('--r2')];
+      var colors = [stylesheet.getPropertyValue('--p2'), stylesheet.getPropertyValue('--g2'), stylesheet.getPropertyValue('--db'), stylesheet.getPropertyValue('--y2')];
       var randi = Math.floor(Math.random()*4);
 
       if (_pickedcolors.includes(randi)){
