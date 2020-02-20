@@ -1,12 +1,12 @@
 // event listeners for each bubble. prompter listeners. redirect accordingly using parent.
 
 hoverings = {
-  'ABOUT' : 'ABOUT: Want to learn a little about me?',
-  'WORK' : "WORK: From fundraising for charities to teaching kids how to code, stuff I've done professionally.",
-  'TRAVELS' : 'TRAVELS: I want to see the world!',
+  'ABOUT' : 'Want to learn a little about me?',
+  'WORK' : "WORK: From fundraising for charities to teaching kids how to code, I care about my work.",
+  'TRAVELS' : 'I want to travel the world!',
   'PORTFOLIO' : "PORTFOLIO: Here you'll find all my whacky, colourful and vibrant pieces.",
   'MUSINGS' : 'A space for my reflections, thoughts and ideas.',
-  'opening' : "Hi! I'm Tasawar Sattar (Tasu). Welcome to my website. &#128578",
+  'opening' : "Hi! I'm Tasawar Sattar (Tasu). Welcome to my website. :)",
   'prompter' : "There's really no reason to CLICK ME"
 };
 
@@ -45,7 +45,7 @@ var writesth = function(towrite){
   waswriting = towrite;
   typewrite.innerHTML = '';
   var i = 0;
-  speed = 30;
+  speed = 25;
 
   var dothedew = function(){
     if (i < towrite.length){

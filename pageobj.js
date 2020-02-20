@@ -139,7 +139,7 @@ var Pages = function(){
 
     var setrandomcolor = function(){
       var stylesheet = getComputedStyle(document.body);
-      var colors = [stylesheet.getPropertyValue('--p2'), stylesheet.getPropertyValue('--g2'), stylesheet.getPropertyValue('--db'), stylesheet.getPropertyValue('--y2')];
+      var colors = [stylesheet.getPropertyValue('--np'), stylesheet.getPropertyValue('--ng'), stylesheet.getPropertyValue('--lblue'), stylesheet.getPropertyValue('--ny')];
       var randi = Math.floor(Math.random()*4);
 
       if (_pickedcolors.includes(randi)){

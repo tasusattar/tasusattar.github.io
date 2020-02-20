@@ -10,7 +10,7 @@
   /* border-bottom: 0.5px groove var(--db); */
   /* background-image: var(--bgcolor); */
   background-color: var(--dark);
-  color: var(--dr);
+  color: var(--r2);
 }
 
 #symblcont{
@@ -40,7 +40,7 @@
   border-color: var(--dp); */
 
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 3px 5px 0 rgba(0,0,0,0.15);
-  background-color: var(--r2);
+  background-color: var(--dr);
 }
 
 #symbl:hover {
