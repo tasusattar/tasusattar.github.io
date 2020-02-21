@@ -109,7 +109,7 @@ var Pages = function(){
         bubl.setAttribute("style", ("background-image :url('"+listchoice[lelkey].getcover()+"'), url('icons/jackie.png')"));
 
         divcontainer.appendChild(bubl);
-        var randnum = Math.floor(Math.random*listchoice.length);
+        var randnum = Math.floor(Math.random*20);
         divcontainer.setAttribute("style", ("order: " + randnum.toString()));
 
         var info = document.createElement('div');
