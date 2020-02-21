@@ -97,19 +97,17 @@ var Pages = function(){
         var bubltag = "bubble singles";
         if (elemcoll) {
           bubltag = "bubble collection";
-
           var colscreen = document.createElement('colorscreen');
-          // var allcolors = ['blue', 'green', 'red', 'purple'];
-          // var randcol = allcolors[Math.floor(Math.random()*allcolors.length)];
           var randcol = setrandomcolor();
           colscreen.setAttribute("class", "coloredscreen")
           colscreen.setAttribute('style', ('background-color: ' + randcol));
           bubl.appendChild(colscreen);
         }
-        // var bubltag = (elemcoll) ? "bubble collection" : "bubble singles";
+
         bubl.setAttribute("class", bubltag);
         bubl.setAttribute("onclick", "window.parent.openpage('"+lelkey+"', "+elemcoll+")");
         bubl.setAttribute("style", ("background-image :url('"+listchoice[lelkey].getcover()+"'), url('icons/jackie.png')"));
+        bubl.setAttribute("style", ("order: " + Math.floor(Math.random*listchoice.length)));
 
         divcontainer.appendChild(bubl);
 
@@ -139,7 +137,7 @@ var Pages = function(){
 
     var setrandomcolor = function(){
       var stylesheet = getComputedStyle(document.body);
-      var colors = [stylesheet.getPropertyValue('--np'), stylesheet.getPropertyValue('--ng'), stylesheet.getPropertyValue('--lblue'), stylesheet.getPropertyValue('--ny')];
+      var colors = [stylesheet.getPropertyValue('--np'), stylesheet.getPropertyValue('--ng'), stylesheet.getPropertyValue('--db'), stylesheet.getPropertyValue('--o2')];
       var randi = Math.floor(Math.random()*4);
 
       if (_pickedcolors.includes(randi)){
