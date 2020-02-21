@@ -107,9 +107,9 @@ var Pages = function(){
         bubl.setAttribute("class", bubltag);
         bubl.setAttribute("onclick", "window.parent.openpage('"+lelkey+"', "+elemcoll+")");
         bubl.setAttribute("style", ("background-image :url('"+listchoice[lelkey].getcover()+"'), url('icons/jackie.png')"));
-        bubl.setAttribute("style", ("order: " + Math.floor(Math.random*listchoice.length)));
 
         divcontainer.appendChild(bubl);
+        divcontainer.setAttribute("style", ("order: " + Math.floor(Math.random*listchoice.length)));
 
         var info = document.createElement('div');
         info.setAttribute("class", "info");
@@ -117,7 +117,6 @@ var Pages = function(){
         info.setAttribute("onclick", "window.parent.openpage('"+lelkey+"', "+elemcoll+" )");
         if (elemcoll){divcontainer.appendChild(info);}
         // divcontainer.appendChild(info);
-
 
         divcontlist.appendChild(divcontainer);
       }
