@@ -77,6 +77,7 @@ var Singles = function(){
 
 
 Singles.prototype.display  = function(){
-  document.getElementById('bigframe').src = pth;
-  document.getElementById('bigscreen').style.display = 'block';
+  
+  document.getElementById('bigframe').src = _fullpath;
+  // document.getElementById('bigscreen').style.display = 'block';
 };

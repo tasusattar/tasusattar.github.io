@@ -1,237 +1,42 @@
-html{
-  height: 100%;
-  width: 100%;
-
-}
-
 body{
-  margin: 2%;
-  height: 98%;
-  width: 98%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  justify-content: center;
-  align-content: center;
-}
-
-#leftside{
-  z-index: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  height: 95%;
-  /* width: 40%; */
-  width: 38vw;
-
-  margin-right: -2%;
-
-}
-
-#rightside{
-  z-index: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: 95%;
-  /* width: 60%; */
-  width: 58vw;
-
-  margin-left: -3%;
-
-}
-
-
-.bubble{
-  border-radius: 50%;
-  display: flex;
-  position: relative;
-  /* background-color: white; */
-  /* border-style: solid; */
-  /* border-width: thin; */
-  /* border-color: black; */
-  border: none;
-  margin: 1% 2%;
-
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-
-  /* height: 0; */
-  background-size: cover;
-  background-position: center;
-
-  box-shadow: 0 7px 12px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
-
-}
-
-.bubble:hover{
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.bubble:active{
-  transform: translateY(2px);
-
-}
-
-.colorscreen{
-  display: inline-block;
-  position: absolute;
+  display: block;
+  height:100%;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: inherit;
-  opacity: 0.5;
-
-}
-
-/* .bubble:hover .homelabels{
-  visibility: visible;
-}
-
-.homelabels{
-  color: var(--dp);
-  margin-top: 30%;
-  visibility: hidden;
-} */
-
-#WORK{
-  z-index: 4;
-
-  order: 1;
-  /* flex-grow: 1; */
-  align-self: flex-end;
-
-  width: 13vmax;
-  height: 13vmax;
-  /* padding-bottom: 15%; */
-
-  right: 25%;
-  background-color: var(--dy);
-  /* border-color: var(--nr); */
-}
-
-#prompter{
-  z-index: 2;
-
-  order: 2;
-  /* flex-grow: 2; */
-  flex-shrink: 2;
-  align-self: flex-start;
-
-  width: 85%;
-  height: 17vmax;
-  /* padding-bottom: 15%; */
-
-  left: 0;
-  margin-left: 0;
-  top: 1%;
+  margin:0;
 
   background-color: var(--dark);
-  color: var(--g2);
-  /* border-color: var(--dark); */
-}
-
-#typewritercontainer{
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-
-  height:65%%;
-  width: 80%;
-  /* padding-top: 20%; */
-  overflow: auto;
-}
-
-#typewriter{
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em;
-  font-size: 90%;
-  overflow: auto;
-
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../PORTFOLIO/Squirrel_Shoot/Squirrel.jpg'); */
+  /* background-image: url('../TRAVELS/NEW_YORK/ProspectPark.jpg'); */
 
 }
 
-#ABOUT{
-  z-index: 8;
+#slideshow {
+  display: block;
+  height:100vh;
+  width: 100vw;
+  margin:0;
 
-  order: 3;
-  /* flex-grow: 1; */
-  align-self: flex-end;
-
-  width: 16vmax;
-  height: 18vmax;
-  /* padding-bottom: 35%; */
-
-  right: 0;
-  margin-right: 0;
-
-  /* background-color: var(--ny); */
-  background-image: url('../icons/jackie.png');
-  /* border-color: var(--ny); */
-}
-
-#PORTFOLIO{
-  z-index: 7;
-
-  order: 4;
-  /* flex-grow: 2; */
-  flex-shrink: 2;
-  align-self: flex-start;
-
-  width: 60%;
-  height: 18vmax;
-  /* padding-bottom: 18%; */
-
-  left: 10%;
-  background-color: var(--b2);
-  /* border-color: var(--b2); */
-}
-
-#TRAVELS{
-  z-index: 5;
-
-  order: 5;
-  /* flex-grow: 1; */
-  align-self: flex-end;
-
-  width: 13vmax;
-  height: 13vmax;
-  /* padding-bottom: 20%; */
-
-  right: 25%;
-  background-color: var(--ng);
-  /* border-color: var(--ng); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../PORTFOLIO/Squirrel_Shoot/Squirrel.jpg');
 
 }
 
-#MUSINGS{
-  z-index: 3;
+/* #tasu{
+  display: block;
+  position: absolute;
 
-  /* flex-grow: 1.5; */
-  order: 6;
-  align-self: flex-start;
+  bottom: 5%;
+  left: 5%;
+  color: var(--rosered2);
+  text-shadow: -1px 0 var(--ny), 0 1px var(--ny), 1px 0 var(--ny), 0 -1px var(--ny);
 
-  width: 40%;
-  height: 20vmin;
-  /* padding-bottom: 12%; */
 
-  left: 2%;
-  bottom: 1%;
-  background-color: var(--dp);
-  /* border-color: var(--np); */
-}
+  z-index: 10;
+  font-size: 5vw;
+  letter-spacing: 3px;
+} */

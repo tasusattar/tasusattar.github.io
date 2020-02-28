@@ -1,8 +1,6 @@
 var Pages = function(){
 
   function Pages(fullinfo){
-    this.backpg = null;
-
     // fullinfo - {'unfiltitle':'', 'dirs':[], 'files':[], 'dscrp':'', 'html':'', 'banner': '', 'profile': '', 'cover': ''}
     var _fullinfo = fullinfo;
     var _title = fullinfo['unfiltitle'];

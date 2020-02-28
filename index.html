@@ -9,7 +9,6 @@
 
   <link type="text/css" rel="stylesheet" href="allcss/colors.css" media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="allcss/basic.css" media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="allcss/header.css" media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="allcss/footer.css" media="screen,projection"/>
 
   <script src='allpgs.js'></script>
@@ -22,26 +21,28 @@
 <body>
   <div id='fullscreen'>
 
-    <div id='bigscreen'><iframe id='bigframe'></iframe></div>
+    <!-- <div id='bigscreen'><iframe id='bigframe'></iframe></div> -->
 
-    <div id='header'>
+    <!-- <div id='header'>
       <div id='symblcont'><img title='HOME' id='symbl' src='icons/symbl.png'></img></div>
       <div id='title'></div>
       <div id='backbtn' title="Back"><img id='bac' src='icons/arrowback.png'>
-        <!-- &#8624;</span> -->
       </div>
-    </div>
+    </div> -->
+
+    <div id='backbtn' title="Back"><img id='bac' class='arrow' src='icons/arrowback.png'></div>
 
     <iframe id='bod'></iframe>
+    <div id='tasu'>T A S U</div>
 
     <div id='foot'>
       <ul class='footlist' id='navdirectory'>
         <li onclick="choosefirstpage('HOME')">HOME</li>
-        <li onclick="choosefirstpage('ABOUT')">ABOUT ME</li>
-        <li onclick="choosefirstpage('WORK')">WORK</li>
         <li onclick="choosefirstpage('PORTFOLIO')">PORTFOLIO</li>
+        <li onclick="choosefirstpage('WORK')">WORK</li>
+        <li onclick="choosefirstpage('ABOUT')">ABOUT ME</li>
         <li onclick="choosefirstpage('TRAVELS')">TRAVELS</li>
-        <li onclick="choosefirstpage('MUSINGS')">THOUGHTS</li>
+        <!-- <li onclick="choosefirstpage('MUSINGS')">THOUGHTS</li> -->
         <li><h7></h7></li>
         <li><a href="onlineresume.pdf" target="_blank">RESUME</a></li>
         <li><a href="https://www.instagram.com/tasusattar/" target="_blank">INSTAGRAM</a></li>

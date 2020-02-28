@@ -55,6 +55,7 @@ var openpage = function(id, elemcoll){
     loadbod(toopen);
   }
   else {
+    prevpgstack.push(current);
     toopen = current.findsingleitem(id);
     toopen.display();
   }
@@ -63,19 +64,20 @@ var openpage = function(id, elemcoll){
 var goback = function(){
   var lstpg = prevpgstack.pop();
 
-  if (prevpgstack.length == 0) {
+  if (prevpgstack.length == 1) {
       backbutt.style.display = 'none';
+      prevpgstack = [];
   }
 
   current = lstpg;
-  current.loadpage();
   current.changepgtitle();
+  current.loadpage();
 };
 
 
 // Header js
-symbol.setAttribute('onclick', "choosefirstpage('HOME')");
-backbutt.setAttribute('onclick', "goback()");
+// symbol.setAttribute('onclick', "choosefirstpage('HOME')");
+// backbutt.setAttribute('onclick', "goback()");
 
 
 console.log('why are you here?');
