@@ -102,7 +102,7 @@ body{
   z-index: 1;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2% 1%;
+  margin: 1%;
 }
 
 .contentcontainer{
@@ -113,7 +113,7 @@ body{
   width: 17vmax;
   z-index: 1;
   padding: 1%;
-  margin: 10px 20px;
+  margin: 5px 15px;
   /* background-color: green; */
   justify-content: center;
   align-items: center;
@@ -170,7 +170,9 @@ body{
   display: inline-block;
   position: relative;
   width: auto;
-  height: 7%;
+  height: auto;
   margin: 1%;
   color: var(--dark);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
