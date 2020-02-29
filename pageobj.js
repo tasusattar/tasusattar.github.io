@@ -99,7 +99,8 @@ var Pages = function(){
           var colscreen = document.createElement('colorscreen');
           var randcol = setrandomcolor();
           colscreen.setAttribute("class", "coloredscreen")
-          colscreen.setAttribute('style', ('background-color: ' + randcol));
+          // colscreen.setAttribute('style', ('background-color: ' + randcol));
+          colscreen.setAttribute('style', 'background-color: var(--rosered1)');
           bubl.appendChild(colscreen);
         }
 
