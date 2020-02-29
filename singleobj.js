@@ -15,7 +15,7 @@ var Singles = function(){
     };
 
     this.gettype = function(){
-      return type;
+      return _type;
     };
 
     this.gettitle = function(){

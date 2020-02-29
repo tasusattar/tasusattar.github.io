@@ -104,7 +104,7 @@ var Pages = function(){
 
         bubl.setAttribute("class", bubltag);
         bubl.setAttribute("onclick", "window.parent.openpage('"+lelkey+"', "+elemcoll+")");
-        bubl.setAttribute("style", ("background-image :url('"+listchoice[lelkey].getcover()+"'), url('icons/jackie.png')"));
+        bubl.setAttribute("style", ("background-image :url('"+listchoice[lelkey].getcover()+"')"));
 
         divcontainer.appendChild(bubl);
         var randnum = Math.floor(Math.random*20);
@@ -202,8 +202,8 @@ Pages.prototype.loadpage = function(){
 
 };
 
-Pages.prototype.changepgtitle  = function(){
-  var doctit = document.getElementById('title');
-  tit = this.gettitle();
-  doctit.innerHTML = (tit != 'HOME') ? tit : '';
-};
+// Pages.prototype.changepgtitle  = function(){
+//   var doctit = document.getElementById('title');
+//   tit = this.gettitle();
+//   doctit.innerHTML = (tit != 'HOME') ? tit : '';
+// };

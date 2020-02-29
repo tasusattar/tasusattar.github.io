@@ -35,7 +35,7 @@ var loadbod = function(page){
   prevpgstack.push(current);
   current = page;
   current.loadpage();
-  current.changepgtitle();
+  // current.changepgtitle();
 };
 
 var hideall = function(){
@@ -70,14 +70,14 @@ var goback = function(){
   }
 
   current = lstpg;
-  current.changepgtitle();
+  // current.changepgtitle();
   current.loadpage();
 };
 
 
 // Header js
 // symbol.setAttribute('onclick', "choosefirstpage('HOME')");
-// backbutt.setAttribute('onclick', "goback()");
+backbutt.setAttribute('onclick', "goback()");
 
 
 console.log('why are you here?');
