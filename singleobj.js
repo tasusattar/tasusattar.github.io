@@ -88,10 +88,10 @@ Singles.prototype.display  = function(){
     frameel.src = pth;
   }
   else{
+    setpickedsinglepth(pth);
     frameel.src = 'displaypage.html'
     // var iframeDoc = frameel.contentWindow.document;
     // iframeDoc.body.setAttribute(style, ('background-image: ' + pth));
-    setpickedsinglepth(pth);
   }
   // document.getElementById('bod').src = _fullpath;
   // document.getElementById('bigscreen').style.display = 'block';
