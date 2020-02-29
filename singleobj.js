@@ -77,7 +77,23 @@ var Singles = function(){
 
 
 Singles.prototype.display  = function(){
-  
-  document.getElementById('bigframe').src = _fullpath;
+  var frameel = document.getElementById('bod');
+  var singtype = this.gettype();
+  var pth = this.getfullpath();
+
+  if (singtype == 1){
+    window.open(pth);
+  }
+  else if (singtype == 2){
+    frameel.src = pth;
+  }
+  else{
+    frameel.src = 'displaypage.html'
+    var iframeDoc = frameel.contentWindow.document;
+    iframeDoc.body.backgroundImage = pth;
+  }
+
+
+  // document.getElementById('bod').src = _fullpath;
   // document.getElementById('bigscreen').style.display = 'block';
 };

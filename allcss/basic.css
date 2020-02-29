@@ -48,7 +48,7 @@ html, body{
 
   border: 1px solid var(--dark);
   /* border: none; */
-  border-radius: 12px;
+  border-radius: 3px;
   box-shadow: 0 7px 12px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
 
   overflow-x: hidden;
