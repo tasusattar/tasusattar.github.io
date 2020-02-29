@@ -4,7 +4,7 @@ var Pages = function(){
     // fullinfo - {'unfiltitle':'', 'dirs':[], 'files':[], 'dscrp':'', 'html':'', 'banner': '', 'profile': '', 'cover': ''}
     var _fullinfo = fullinfo;
     // var _title = fullinfo['unfiltitle'];
-    var _title = settitle();
+    var _title = '';
     var _collections = {};
     var _singles = {};
     var _description = fullinfo['dscrp'];
@@ -188,6 +188,7 @@ var Pages = function(){
         setcollsing(true);
         setcollsing(false);
       }
+      settitle();
     }
 
   };
