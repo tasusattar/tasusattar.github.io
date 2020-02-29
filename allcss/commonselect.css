@@ -125,7 +125,7 @@ body{
   display: block;
   position: relative;
   z-index: 2;
-  background-color: var(--rosered1);
+  background-color: var(--dark);
   background-size: cover;
   background-position: center;
 
@@ -175,4 +175,5 @@ body{
   color: var(--dark);
   overflow-wrap: break-word;
   word-wrap: break-word;
+  font-size: 85%;
 }

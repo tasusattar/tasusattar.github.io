@@ -3,7 +3,8 @@ var Pages = function(){
   function Pages(fullinfo){
     // fullinfo - {'unfiltitle':'', 'dirs':[], 'files':[], 'dscrp':'', 'html':'', 'banner': '', 'profile': '', 'cover': ''}
     var _fullinfo = fullinfo;
-    var _title = fullinfo['unfiltitle'];
+    // var _title = fullinfo['unfiltitle'];
+    var _title = settitle();
     var _collections = {};
     var _singles = {};
     var _description = fullinfo['dscrp'];
@@ -127,6 +128,12 @@ var Pages = function(){
 
 
     // Private Setters
+    var settitle = function(){
+      var unfiltitle = fullinfo['unfiltitle'];
+      var filttitle = unfiltitle.replace(/_/g, ' ');
+      _title = filttitle;
+    };
+
     var checkrefreshcolors = function(){
       if (_pickedcolors.length == 4){
         _pickedcolors = [];

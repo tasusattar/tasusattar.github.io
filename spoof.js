@@ -20,6 +20,7 @@ for (var key in directpg){
 var pickedid = 'HOME';
 var prevpgstack = [];
 current = directpg[pickedid];
+singlepickedpth = '';
 
 // current.changepgtitle();
 current.loadpage();
@@ -64,7 +65,7 @@ var openpage = function(id, elemcoll){
 var goback = function(){
   var lstpg = prevpgstack.pop();
 
-  if (prevpgstack.length == 1) {
+  if (prevpgstack.length == 0) {
       backbutt.style.display = 'none';
       prevpgstack = [];
   }
@@ -74,6 +75,9 @@ var goback = function(){
   current.loadpage();
 };
 
+var setpickedsinglepth = function(singlepath){
+  singlepickedpth = singlepath;
+};
 
 // Header js
 // symbol.setAttribute('onclick', "choosefirstpage('HOME')");

@@ -89,11 +89,10 @@ Singles.prototype.display  = function(){
   }
   else{
     frameel.src = 'displaypage.html'
-    var iframeDoc = frameel.contentWindow.document;
-    iframeDoc.body.backgroundImage = pth;
+    // var iframeDoc = frameel.contentWindow.document;
+    // iframeDoc.body.setAttribute(style, ('background-image: ' + pth));
+    setpickedsinglepth(pth);
   }
-
-
   // document.getElementById('bod').src = _fullpath;
   // document.getElementById('bigscreen').style.display = 'block';
 };
