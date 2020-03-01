@@ -9,11 +9,16 @@
 
   <style type="text/css">
     body{
-      display: block;
       height:100%;
       width: 100%;
       margin:0;
       background-color: var(--dark);
+    }
+    #displayscreen{
+      display: block;
+      height: 100%;
+      width: 100%;
+      margin: 0;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -24,11 +29,12 @@
 
 
 <body>
+  <div id='displayscreen'></div>
 
   <script>
     var selected = window.parent.singlepickedpth;
     // document.body.style.backgroundImage = selected;
-    document.body.setAttribute('style', ('background-image: ' + selected));
+    document.getElementById('displayscreen').setAttribute('style', ('background-image: ' + selected));
 
   </script>
 
