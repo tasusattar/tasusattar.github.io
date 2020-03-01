@@ -36,6 +36,13 @@ html, body{
   background-repeat: no-repeat;
 }
 
+#top{
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
 #bod{
   display: inline-flex;
   position: absolute;

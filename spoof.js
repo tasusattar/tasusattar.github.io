@@ -26,8 +26,8 @@ singlepickedpth = '';
 current.loadpage();
 
 var choosefirstpage = function(id){
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  // document.body.scrollTop = 0;
+  // document.documentElement.scrollTop = 0;
   backbutt.style.display = 'block';
   var pgofchoice = directpg[id];
   loadbod(pgofchoice);
