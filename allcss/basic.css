@@ -6,6 +6,8 @@ html, body{
   font-family: Geneva;
   letter-spacing: 0.05em;
 
+  scroll-behavior: smooth;
+
   /* background-color: var(--c2dark); */
   /* background-image: url('../icons/backtest.gif');
   background-position: center;
@@ -54,7 +56,7 @@ html, body{
   overflow-x: hidden;
   overflow-y: auto;
 
-  background-color: var(--rosecream1);
+  background-color: #fffff4;
 }
 
 #tasu{
