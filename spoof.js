@@ -9,6 +9,8 @@ directpg = {
 
 symbol = document.getElementById('symbl');
 backbutt = document.getElementById('bac');
+leftbutt = document.getElementById('left');
+rightbutt = document.getElementById('right');
 
 
 // Make Pages and store in directpg
@@ -58,6 +60,8 @@ var openpage = function(id, elemcoll){
     loadbod(toopen);
   }
   else {
+    leftbutt.style.display = 'block';
+    rightbutt.style.display = 'block';
     prevpgstack.push(current);
     toopen = current.findsingleitem(id);
     toopen.display();
@@ -66,6 +70,8 @@ var openpage = function(id, elemcoll){
 
 var goback = function(){
   var lstpg = prevpgstack.pop();
+  leftbutt.style.display = 'none';
+  rightbutt.style.display = 'none';
 
   if (prevpgstack.length == 0) {
       backbutt.style.display = 'none';
@@ -77,6 +83,11 @@ var goback = function(){
   current.loadpage();
 };
 
+var switchselected = function(next){
+  var switchid = current.switchsingleselected(next);
+  openpage(switchid, false);
+};
+
 var setpickedsinglepth = function(singlepath){
   singlepickedpth = singlepath;
 };
@@ -84,6 +95,8 @@ var setpickedsinglepth = function(singlepath){
 // Header js
 // symbol.setAttribute('onclick', "choosefirstpage('HOME')");
 backbutt.setAttribute('onclick', "goback()");
+leftbutt.setAttribute('onclick', "switchselected(false)");
+rightbutt.setAttribute('onclick', "switchselected(true)");
 
 
 console.log('why are you here?');

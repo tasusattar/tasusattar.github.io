@@ -95,8 +95,42 @@ html, body{
 
 }
 
-#bac{
-  /* display: block; */
+/* #bac{
+  display: block;
+  display: none;
+  margin: auto;
+  height: 4.5vmin;
+  width: 4.5vmin;
+  background-color: var(--dark);
+  border: 0.5px groove var(--dark);
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 3px 0 rgba(0,0,0,0.1);
+} */
+
+#leftbtn{
+  display: inline-block;
+  position: absolute;
+  height: 5vmin;
+  width: 5vmin;
+  top: 50%;
+  left: 1%;
+  overflow: hidden;
+
+}
+
+#rightbtn{
+  display: inline-block;
+  position: absolute;
+  height: 5vmin;
+  width: 5vmin;
+  top: 50%;
+  right: 1%;
+  overflow: hidden;
+}
+
+
+
+.arrow{
   display: none;
   margin: auto;
   height: 4.5vmin;

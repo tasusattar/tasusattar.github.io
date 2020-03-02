@@ -13,6 +13,7 @@ var Pages = function(){
     var _banner = fullinfo['banner'];
     var _profile = fullinfo['profile'];
     var _pickedcolors = [];
+    var _lastfound = '';
 
     // Public Methods
     this.gethtml = function(){
@@ -73,7 +74,22 @@ var Pages = function(){
       return _collections[id];
     };
     this.findsingleitem = function(id){
+      _lastfound = id;
       return _singles[id];
+    };
+
+    this.switchsingleselected = function(next){
+      var keys = Object.keys(_singles);
+      var i = keys.indexOf(_lastfound);
+      var ri = 0;
+
+      if (next) {
+        ri = (i+1 == keys.length - 1) ? 0 : i+1;
+      }
+      else{
+        ri = (i-1 == -1) ? keys.length - 1 : i-1;
+      }
+      return keys[ri];
     };
 
     // Should look like
