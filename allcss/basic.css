@@ -37,10 +37,12 @@ html, body{
 }
 
 #top{
-  display: none;
+  display: hidden;
   position: absolute;
   top:0;
   left: 0;
+  height: 0;
+  width: 0;
 }
 
 #bod{
@@ -99,6 +101,7 @@ html, body{
   margin: auto;
   height: 4.5vmin;
   width: 4.5vmin;
+  border: 1px solid var(--dark);
   border-radius: 50%;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 3px 0 rgba(0,0,0,0.1);
 }

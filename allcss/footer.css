@@ -41,12 +41,10 @@
   /* align-content: space-around; */
 }
 
-/* a{
+a{
   text-decoration: none;
-  font-size: 0.8em;
-  font-size: 70%;
-  color: var(--red);
-} */
+  color: white;
+}
 
 .links{
   font-size: 70%;
@@ -65,8 +63,6 @@
 
 #navdirectory li{
   width: fit-content;
-  text-decoration: none;
-  color: white;
   /* margin-left: 0; */
 }
 
