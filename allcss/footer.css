@@ -48,7 +48,7 @@ a{
 
 .links{
   font-size: 70%;
-  color: var(--red);
+  color: var(--lightafred);
 }
 
 #navdirectory{
@@ -69,7 +69,7 @@ a{
 #navdirectory a:hover{
   opacity: 0.7;
   text-decoration: underline;
-  color: var(--red);
+  color: var(--lightafred);
   cursor: pointer;
 }
 

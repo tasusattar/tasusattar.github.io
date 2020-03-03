@@ -46,14 +46,14 @@ html, body{
 }
 
 #bod{
-  display: inline-flex;
+  display: flex;
   position: absolute;
   align-self: center;
 
   /* top: 1vmin; */
   /* left: 0.925%; */
-  height: 90vh;
-  width: 90vw;
+  height: 94vh;
+  width: 92vw;
   z-index: 4;
   /* margin: 2%; */
 
@@ -83,16 +83,16 @@ html, body{
 }
 
 #backbtn{
-  display: inline-block;
+  display: block;
   position: absolute;
-  height: 5vmin;
-  width: 5vmin;
+  height: 5.5vmin;
+  width: 5.5vmin;
   top: 1%;
   right: 1%;
   overflow: hidden;
+  z-index: 7;
   /* border-radius: 50%;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 3px 5px 0 rgba(0,0,0,0.15); */
-
 }
 
 /* #bac{
@@ -110,22 +110,23 @@ html, body{
 #leftbtn{
   display: inline-block;
   position: absolute;
-  height: 5vmin;
-  width: 5vmin;
+  height: 5.5vmin;
+  width: 5.5vmin;
   top: 50%;
   left: 1%;
   overflow: hidden;
-
+  z-index: 7;
 }
 
 #rightbtn{
   display: inline-block;
   position: absolute;
-  height: 5vmin;
-  width: 5vmin;
+  height: 5.5vmin;
+  width: 5.5vmin;
   top: 50%;
   right: 1%;
   overflow: hidden;
+  z-index: 7;
 }
 
 
@@ -133,12 +134,13 @@ html, body{
 .arrow{
   display: none;
   margin: auto;
-  height: 4.5vmin;
-  width: 4.5vmin;
+  height: 5vmin;
+  width: 5vmin;
   background-color: var(--dark);
-  border: 0.5px groove var(--dark);
+  border: 0.5px solid var(--rosered1);
   border-radius: 50%;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 3px 0 rgba(0,0,0,0.1);
+  z-index: 8;
 }
 
 .arrow:hover {
