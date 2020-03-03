@@ -84,7 +84,7 @@ var Pages = function(){
       var ri = 0;
 
       if (next) {
-        ri = (i+1 == keys.length - 1) ? 0 : i+1;
+        ri = (i+1 == keys.length) ? 0 : i+1;
       }
       else{
         ri = (i-1 == -1) ? keys.length - 1 : i-1;

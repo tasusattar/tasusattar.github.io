@@ -60,11 +60,11 @@ var openpage = function(id, elemcoll){
     loadbod(toopen);
   }
   else {
-    leftbutt.style.display = 'block';
-    rightbutt.style.display = 'block';
     prevpgstack.push(current);
     toopen = current.findsingleitem(id);
     toopen.display();
+    leftbutt.style.display = 'block';
+    rightbutt.style.display = 'block';
   }
 };
 
@@ -85,7 +85,9 @@ var goback = function(){
 
 var switchselected = function(next){
   var switchid = current.switchsingleselected(next);
-  openpage(switchid, false);
+  var switchopen = current.findsingleitem(switchid);
+  switchopen.display();
+  // openpage(switchid, false);
 };
 
 var setpickedsinglepth = function(singlepath){
