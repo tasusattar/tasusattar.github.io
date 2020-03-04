@@ -32,7 +32,7 @@ var choosefirstpage = function(id){
   // document.body.scrollTop = 0;
   // document.documentElement.scrollTop = 0;
   // frameelem.setAttribute('style', 'background-color: #fffff4');
-  backbutt.style.backgroundColor = '#fffff4';
+  frameelem.style.backgroundColor = '#fffff4';
   backbutt.style.display = 'block';
   var pgofchoice = directpg[id];
   loadbod(pgofchoice);
