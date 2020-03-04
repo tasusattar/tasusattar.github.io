@@ -7,10 +7,11 @@ directpg = {
   'PORTFOLIO': null
 };
 
-symbol = document.getElementById('symbl');
+// symbol = document.getElementById('symbl');
 backbutt = document.getElementById('bac');
 leftbutt = document.getElementById('left');
 rightbutt = document.getElementById('right');
+frameelem = document.getElementById('bod');
 
 
 // Make Pages and store in directpg
@@ -30,13 +31,15 @@ current.loadpage();
 var choosefirstpage = function(id){
   // document.body.scrollTop = 0;
   // document.documentElement.scrollTop = 0;
+  // frameelem.setAttribute('style', 'background-color: #fffff4');
+  backbutt.style.backgroundColor = '#fffff4';
   backbutt.style.display = 'block';
   var pgofchoice = directpg[id];
   loadbod(pgofchoice);
 };
 
 var loadbod = function(page){
-  hideall();
+  // hideall();
   prevpgstack.push(current);
   current = page;
   current.loadpage();
@@ -44,9 +47,8 @@ var loadbod = function(page){
 };
 
 var hideall = function(){
-  var frameelem = document.getElementById('bod');
-  var iframeDocument = frameelem.contentWindow.document;
-  // frameelem.contentDocument ||
+  // var frameelem = document.getElementById('bod');
+  var iframeDocument = frameelem.contentWindow.document || frameelem.contentDocument;
   var allkids = iframeDocument.body.children;
   for (var kidi = 0; kidi < allkids.length; kidi++){
     allkids[kidi].style.display = 'none';

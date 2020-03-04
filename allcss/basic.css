@@ -3,10 +3,8 @@ html, body{
   width: 100%;
   margin:0;
 
-  font-family: Geneva;
+  font-family: Geneva, Verdana, sans-serif;
   letter-spacing: 0.05em;
-
-  scroll-behavior: smooth;
 
   /* background-color: var(--c2dark); */
   /* background-image: url('../icons/backtest.gif');
@@ -23,6 +21,7 @@ html, body{
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   z-index: 1;
 
   justify-content: center;
@@ -57,15 +56,15 @@ html, body{
   z-index: 4;
   /* margin: 2%; */
 
-  border: 1px solid var(--dark);
-  /* border: none; */
+  /* border: 1px solid var(--dark); */
+  border: none;
   border-radius: 3px;
   box-shadow: 0 7px 12px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
 
   overflow-x: hidden;
   overflow-y: auto;
 
-  background-color: #fffff4;
+  /* background-color: #fffff4; */
 }
 
 #tasu{
