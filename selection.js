@@ -15,6 +15,8 @@ for (var divi = 0; divi < divs.length; divi++){
 }
 
 
-docbod.style.width = "100%";
-docbod.style.visibility = "visible";
-docbod.style.opacity = 1;
+setTimeout(function(){
+  docbod.style.width = "100%";
+  docbod.style.visibility = "visible";
+  docbod.style.opacity = 1;
+}, 1000);

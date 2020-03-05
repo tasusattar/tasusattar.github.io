@@ -42,10 +42,13 @@
     var dscreen = document.getElementById('displayscreen');
     // document.body.style.backgroundImage = selected;
     dscreen.setAttribute('style', ("background-image: url('" + selected + "')"));
-    dscreen.style.height = "100vh"
-    dscreen.style.width = "100vw";
-    dscreen.style.visibility = "visible";
-    dscreen.style.opacity = 1;
+
+    setTimeout(function(){
+      dscreen.style.height = "100vh"
+      dscreen.style.width = "100vw";
+      dscreen.style.visibility = "visible";
+      dscreen.style.opacity = 1;
+    }, 1000);
 
   </script>
 
