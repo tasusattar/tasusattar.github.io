@@ -48,10 +48,12 @@ html, body{
   display: flex;
   position: absolute;
   align-self: center;
+  /* top: -100vh; */
 
   /* top: 1vmin; */
   /* left: 0.925%; */
-  height: 94vh;
+  /* height: 94vh; */
+  height: 0;
   width: 92vw;
   z-index: 4;
   /* margin: 2%; */
@@ -63,6 +65,11 @@ html, body{
 
   overflow-x: hidden;
   overflow-y: auto;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  /* transition: top 1s ease-out; */
 
   /* background-color: #fffff4; */
 }
