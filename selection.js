@@ -19,4 +19,4 @@ setTimeout(function(){
   docbod.style.width = "100%";
   docbod.style.visibility = "visible";
   docbod.style.opacity = 1;
-}, 1000);
+}, 400);
