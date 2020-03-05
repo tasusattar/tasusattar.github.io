@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ceb0bbc-ba88-4736-84d2-1b35e5a6d390" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TRAVELS/MONTREAL/.MontrealPano.jpg.icloud" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TRAVELS/NEW_YORK/.ProspectPark.jpg.icloud" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allpgs.js" afterPath="$PROJECT_DIR$/allpgs.js" />
-    </list>
+    <list default="true" id="4ceb0bbc-ba88-4736-84d2-1b35e5a6d390" name="Default" comment="" />
     <ignored path="MeOMy.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
