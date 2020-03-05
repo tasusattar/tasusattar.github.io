@@ -110,10 +110,5 @@ backbutt.setAttribute('onclick', "goback()");
 leftbutt.setAttribute('onclick', "switchselected(false)");
 rightbutt.setAttribute('onclick', "switchselected(true)");
 
-frameelem.style.height = "94vh"
-frameelem.style.width = "92vw";
-frameelem.style.visibility = "visible";
-frameelem.style.opacity = 1;
-
 
 console.log('why are you here?');
