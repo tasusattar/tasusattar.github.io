@@ -68,7 +68,8 @@ html, body{
 
   visibility: hidden;
   opacity: 0;
-  transition: opacity 1s ease-out;
+  transition: opacity 0.8s ease-out;
+  transition: height 0.8s ease-in-out;
   /* transition: top 1s ease-out; */
 
   /* background-color: #fffff4; */
