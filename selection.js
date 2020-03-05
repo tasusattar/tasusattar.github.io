@@ -1,6 +1,7 @@
 
 var thispg = window.parent.current;
 var divs = ['profilepic', 'bannerpic', 'description', 'listcontainer'];
+var docbod = document.body;
 
 // var divs = thispg.gettypestyles();
 
@@ -12,3 +13,8 @@ for (var divi = 0; divi < divs.length; divi++){
   // thispg.unhide(div, realelem);
   thispg.generate(div, realelem);
 }
+
+
+docbod.style.width = "100%";
+docbod.style.visibility = "visible";
+docbod.style.opacity = 1;
