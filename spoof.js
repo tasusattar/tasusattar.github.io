@@ -12,6 +12,7 @@ backbutt = document.getElementById('bac');
 leftbutt = document.getElementById('left');
 rightbutt = document.getElementById('right');
 frameelem = document.getElementById('bod');
+fullscreen = document.getElementById('fullscreen');
 
 
 // Make Pages and store in directpg
@@ -32,6 +33,11 @@ var choosefirstpage = function(id){
   // document.body.scrollTop = 0;
   // document.documentElement.scrollTop = 0;
   // frameelem.setAttribute('style', 'background-color: #fffff4');
+  fullscreen.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
   frameelem.style.backgroundColor = '#fffff4';
   backbutt.style.display = 'block';
   var pgofchoice = directpg[id];
@@ -67,6 +73,7 @@ var openpage = function(id, elemcoll){
     toopen.display();
     leftbutt.style.display = 'block';
     rightbutt.style.display = 'block';
+    frameelem.style.backgroundColor = 'transparent';
   }
 };
 
@@ -74,6 +81,7 @@ var goback = function(){
   var lstpg = prevpgstack.pop();
   leftbutt.style.display = 'none';
   rightbutt.style.display = 'none';
+  frameelem.style.backgroundColor = '#fffff4';
 
   if (prevpgstack.length == 0) {
       backbutt.style.display = 'none';

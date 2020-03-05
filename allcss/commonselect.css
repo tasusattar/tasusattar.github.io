@@ -147,8 +147,10 @@ body{
 }
 
 .collection{
-  height: 15vw;
-  width: 15vw;
+  /* height: 15vw;
+  width: 15vw; */
+  height: 85%;
+  width: 85%;
   border-radius: 60%;
 
 }
@@ -172,14 +174,17 @@ body{
 
 .info{
   display: inline-block;
-  position: relative;
+  position: absolute;
   width: auto;
   height: auto;
-  margin: 1%;
+  margin: -10% 1%;
   color: var(--dark);
   overflow-wrap: break-word;
   word-wrap: break-word;
   text-align: center;
+  font-size: small;
+  z-index: 3;
+  bottom: -5px;
 }
 
 .info:hover{

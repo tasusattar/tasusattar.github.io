@@ -4,5 +4,5 @@ var prevpgstack = prntwindow.prevpgstack;
 var frameel = prntwindow.frameelem;
 
 backbutt.style.display = 'none';
-frameel.style.backgroundColor = '';
+frameel.style.backgroundColor = 'transparent';
 prevpgstack = [];
