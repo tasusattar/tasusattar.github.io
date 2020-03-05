@@ -7,10 +7,10 @@ backbutt.style.display = 'none';
 frameel.style.backgroundColor = 'transparent';
 prevpgstack = [];
 
-frameel.style.height = "0";
-frameel.style.width = "0";
-frameel.style.visibility = "hidden";
-frameel.style.opacity = 0;
+// frameel.style.height = "0";
+// frameel.style.width = "0";
+// frameel.style.visibility = "hidden";
+// frameel.style.opacity = 0;
 
 frameel.style.height = "94vh"
 frameel.style.width = "92vw";
