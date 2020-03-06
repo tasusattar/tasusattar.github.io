@@ -28,4 +28,4 @@ setTimeout(function(){
   frameel.style.width = "92vw";
   frameel.style.visibility = "visible";
   frameel.style.opacity = 1;
-}, 700);
+}, 600);

@@ -87,6 +87,11 @@ var goback = function(){
       backbutt.style.display = 'none';
       prevpgstack = [];
   }
+  fullscreen.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
 
   current = lstpg;
   // current.changepgtitle();
