@@ -26,7 +26,7 @@ frameel.style.opacity = 0;
 // frameel.style.top = 'auto';
 
 setTimeout(function(){
-  frameel.style.height = "94vh"
+  frameel.style.height = "94vh";
   frameel.style.width = "92vw";
   frameel.style.visibility = "visible";
   frameel.style.opacity = 1;
