@@ -22,7 +22,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-image: url('../OpeningPhotos/ColorCover.JPG'); */
+  background-image: url('OpeningPhotos/ColorCover.JPG');
   /* background-image: url('../PORTFOLIO/Dutch_Resistance/cover.png'); */
    transition: opacity 0.5s ease-out;
 
