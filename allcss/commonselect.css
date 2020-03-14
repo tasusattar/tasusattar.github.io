@@ -183,14 +183,15 @@ body{
   position: absolute;
   width: auto;
   height: auto;
-  margin: -10% 1%;
+  margin: -3% 0%;
   color: var(--dark);
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  /* overflow-wrap: break-word;
+  word-wrap: break-word; */
+  white-space: nowrap;
   text-align: center;
   font-size: small;
-  z-index: 3;
-  bottom: -5px;
+  z-index: 5;
+  top: 4px;
 }
 
 .info:hover{
