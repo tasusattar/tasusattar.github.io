@@ -6,15 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link type="text/css" rel="stylesheet" href="../allcss/colors.css" media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="home.css" media="screen,projection"/>
+  <!-- <link type="text/css" rel="stylesheet" href="home.css" media="screen,projection"/> -->
+
+  <style type="text/css">
+    body{
+      display: block;
+      height:100%;
+      width: 100%;
+      margin:0;
+
+      background-color: var(--dark);
+    }
+
+    #slideshow {
+      display: block;
+      height:100vh;
+      width: 100vw;
+      margin:0;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: 0.5s ease;
+    }
+
+    .slides{
+      width: 100%;
+      transition: opacity 0.4s ease;
+
+    }
+
+</style>
 
 </head>
 
 
 <body>
-  <div id='slideshow'></div>
+  <div id='slideshow'>
+    <img class="slides" src="OpeningPhotos/ColorCover.JPG">
+    <img class="slides" src="OpeningPhotos/Squirrel.jpg">
+    <!-- <img class="slides" src="img_chicago.jpg" style="width:100%"> -->
+  </div>
 
-  <script src='home.js'></script>
+  <!-- <script src='home.js'></script> -->
+
+  <script>
+
+  var prntwindow = window.parent;
+  var backbutt = prntwindow.backbutt;
+  var prevpgstack = prntwindow.prevpgstack;
+  var frameel = prntwindow.frameelem;
+  var slider = document.getElementById('slideshow');
+  var allslides = document.getElementsByClassName("slides");
+
+  backbutt.style.display = 'none';
+  frameel.style.backgroundColor = 'transparent';
+  prevpgstack = [];
+
+  frameel.style.height = "94vh"
+  frameel.style.width = "92vw";
+  frameel.style.visibility = "visible";
+  frameel.style.opacity = 1;
+  frameel.style.top = 'auto';
+
+  var islide = 0;
+  sliding();
+
+  function sliding() {
+    allslides[islide-1].style.display = "none";
+    allslides[islide-1].style.opacity = 0;
+
+    allslides[islide].style.display = "block";
+    allslides[islide].style.opacity = 1;
+
+    islide = (islide+1 == allslide.length) ? 0 : islide + 1;
+    setTimeout(sliding, 3000); // Change image every 2 seconds
+  }
+
+  </script>
 
 </body>
 

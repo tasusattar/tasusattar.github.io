@@ -3,7 +3,7 @@ var backbutt = prntwindow.backbutt;
 var prevpgstack = prntwindow.prevpgstack;
 var frameel = prntwindow.frameelem;
 var slider = document.getElementById('slideshow');
-var openingpics = ['OpeningPhotos/ColorCover.JPG', 'OpeningPhotos/Squirrel.jpg'];
+var allslides = document.getElementsByClassName("slides");
 
 backbutt.style.display = 'none';
 frameel.style.backgroundColor = 'transparent';
@@ -19,6 +19,31 @@ frameel.style.width = "92vw";
 frameel.style.visibility = "visible";
 frameel.style.opacity = 1;
 frameel.style.top = 'auto';
+
+var islide = 0;
+sliding();
+
+function sliding() {
+  allslides[islide-1].style.display = "none";
+  allslides[islide-1].style.opacity = 0;
+
+  allslides[islide].style.display = "block";
+  allslides[islide].style.opacity = 1;
+
+  islide = (islide+1 == allslide.length) ? 0 : islide + 1;
+  setTimeout(sliding, 3000); // Change image every 2 seconds
+}
+
+
+
+
+
+
+
+
+
+
+// Too many intervals
 
 // setTimeout(function(){
 //   frameel.style.height = "94vh";
