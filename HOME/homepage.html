@@ -58,7 +58,7 @@
   var prevpgstack = prntwindow.prevpgstack;
   var frameel = prntwindow.frameelem;
   var slider = document.getElementById('slideshow');
-  var allslides = document.getElementsByClassName("slides");
+  // var allslides = document.getElementsByClassName("slides");
 
   backbutt.style.display = 'none';
   frameel.style.backgroundColor = 'transparent';
@@ -80,8 +80,14 @@ setTimeout(function(){
   sliding();
 
   function sliding() {
-    allslides[islide-1].style.display = "none";
-    allslides[islide-1].style.opacity = 0;
+    // allslides[islide-1].style.display = "none";
+    var allslides = document.getElementsByClassName("slides");
+
+    var i = 0;
+    for (i = 0; i < allslides.length; i++) {
+      allslides[i].style.display = "none";
+      allslides[i].style.opacity = 0;
+    }
 
     allslides[islide].style.display = "block";
     allslides[islide].style.opacity = 1;
