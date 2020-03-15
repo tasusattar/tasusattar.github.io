@@ -52,7 +52,7 @@
       dscreen.style.opacity = 1;
     }, 300);
 
-    document.addEventListener('keydown', keyswitch);
+    window.parent.document.addEventListener('keydown', keyswitch);
 
     function keyswitch(e){
       e = e || window.event;
@@ -68,6 +68,7 @@
             break;
 
     };
+  };
 
   </script>
 
