@@ -139,13 +139,12 @@ function keyswitch(e){
   }
 
 
-
-
-// Header js
-// symbol.setAttribute('onclick', "choosefirstpage('HOME')");
 backbutt.setAttribute('onclick', "goback()");
 leftbutt.setAttribute('onclick', "switchselected(false)");
 rightbutt.setAttribute('onclick', "switchselected(true)");
+
+document.addEventListener('keydown', keyswitch);
+
 
 
 console.log('why are you here?');
