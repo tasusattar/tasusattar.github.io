@@ -78,6 +78,10 @@ var openpage = function(id, elemcoll){
 };
 
 var goback = function(){
+  if (prevpgstack.length == 0) {
+      return;
+  }
+
   var lstpg = prevpgstack.pop();
   leftbutt.style.display = 'none';
   rightbutt.style.display = 'none';
@@ -108,6 +112,34 @@ var switchselected = function(next){
 var setpickedsinglepth = function(singlepath){
   singlepickedpth = singlepath;
 };
+
+
+function keyswitch(e){
+  e = e || window.event;
+
+  switch (e.keyCode) {
+    case 8:
+      if ("block" == backbutt.style.display){
+        goback();
+      }
+      break;
+    case 37:
+      // alert('left');
+      if ("block" == leftbutt.style.display){
+        switchselected(false);
+      }
+      break;
+    case 39:
+      // alert('right');
+      if("block" == rightbutt.style.display){
+        switchselected(true);
+      }
+      break;
+    };
+  }
+
+
+
 
 // Header js
 // symbol.setAttribute('onclick', "choosefirstpage('HOME')");

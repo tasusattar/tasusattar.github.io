@@ -20,3 +20,5 @@ setTimeout(function(){
   docbod.style.visibility = "visible";
   docbod.style.opacity = 1;
 }, 400);
+
+document.addEventListener('keydown', window.parent.keyswitch);
