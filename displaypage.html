@@ -52,6 +52,23 @@
       dscreen.style.opacity = 1;
     }, 300);
 
+    document.addEventListener('keydown', keyswitch);
+
+    function keyswitch(e){
+      e = e || window.event;
+
+      switch (e.keyCode) {
+        case 37:
+            // alert('left');
+            window.parent.switchselected(false);
+            break;
+        case 39:
+            // alert('right');
+            window.parent.switchselected(true);
+            break;
+
+    };
+
   </script>
 
 </body>
