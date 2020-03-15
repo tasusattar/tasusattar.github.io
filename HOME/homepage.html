@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link type="text/css" rel="stylesheet" href="../allcss/colors.css" media="screen,projection"/>
-  <!-- <link type="text/css" rel="stylesheet" href="home.css" media="screen,projection"/> -->
 
-  <style type="text/css">
+<style type="text/css">
     body{
       display: block;
       height:100%;
@@ -33,7 +32,7 @@
     .slides{
       display: none;
       opacity: 0;
-      width: 100%;      
+      width: 100%;
       transition: opacity 0.4s ease;
 
     }
@@ -50,9 +49,9 @@
     <!-- <img class="slides" src="img_chicago.jpg" style="width:100%"> -->
   </div>
 
-  <!-- <script src='home.js'></script> -->
 
-  <script>
+<!-- Full JS -->
+<script>
 
   var prntwindow = window.parent;
   var backbutt = prntwindow.backbutt;
@@ -65,11 +64,17 @@
   frameel.style.backgroundColor = 'transparent';
   prevpgstack = [];
 
+  frameel.style.height = "0"
+  frameel.style.width = "0";
+  frameel.style.visibility = "hidden";
+
+setTimeout(function(){
   frameel.style.height = "94vh"
   frameel.style.width = "92vw";
   frameel.style.visibility = "visible";
   frameel.style.opacity = 1;
   frameel.style.top = 'auto';
+}, 350);
 
   var islide = 0;
   sliding();
@@ -82,10 +87,10 @@
     allslides[islide].style.opacity = 1;
 
     islide = (islide+1 == allslide.length) ? 0 : islide + 1;
-    setTimeout(sliding, 3000); // Change image every 2 seconds
+    setTimeout(sliding, 3000); // Change image every 3 seconds
   }
 
-  </script>
+</script>
 
 </body>
 
