@@ -46,7 +46,7 @@
   <div id='slideshow'>
     <img class="slides" src="OpeningPhotos/ColorCover.JPG">
     <img class="slides" src="OpeningPhotos/Squirrel.jpg">
-    <img class="slides" src="img_chicago.jpg" style="width:100%">
+    <!-- <img class="slides" src="img_chicago.jpg" style="width:100%"> -->
   </div>
 
 
@@ -81,8 +81,8 @@ setTimeout(function(){
 
   function sliding() {
     var i = (islide==0) ? allslides.length-1 : islide-1;
-    allslides[islide-1].style.display = "none";
-    allslides[islide-1].style.opacity = 0;
+    allslides[i].style.display = "none";
+    allslides[i].style.opacity = 0;
 
 
     // var i = 0;
