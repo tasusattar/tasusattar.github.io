@@ -130,8 +130,9 @@ var pickhighlight = function(id){
     behavior: 'smooth'
   });
   hidehighlights();
-  openpage(id, false);
   current = directpg['MUSINGS'];
+  openpage(id, false);
+  prevpgstack.pop();
 };
 
 
