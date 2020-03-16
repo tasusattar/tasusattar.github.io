@@ -86,12 +86,16 @@ setTimeout(function(){
   sliding();
 
   function sliding() {
-    var i = (islide==0) ? allslides.length-1 : islide-1;
+    slider.style.opacity = 0;
+    slider.setAttribute('style', 'background-image: url('+allslides[islide]+')')
+
+    islide = (islide+1 == allslides.length) ? 0 : islide + 1;
+    setTimeout(sliding, 5500); // Change image every 3 seconds
+    setTimeout(function(){slider.style.opacity = 1;},400);slider.style.opacity = 1;
+
+    // var i = (islide==0) ? allslides.length-1 : islide-1;
     // allslides[i].style.display = "none";
     // allslides[i].style.opacity = 0;
-
-    slider.style.opacity = 0;
-    slider.style.backgroundImage = allslides[i];
 
     // var i = 0;
     // for (i = 0; i < allslides.length; i++) {
@@ -102,9 +106,6 @@ setTimeout(function(){
     // allslides[islide].style.display = "block";
     // allslides[islide].style.opacity = 1;
 
-    islide = (islide+1 == allslides.length) ? 0 : islide + 1;
-    setTimeout(sliding, 5500); // Change image every 3 seconds
-    setTimeout(function(){slider.style.opacity = 1;},400);slider.style.opacity = 1;
   }
 
 </script>
