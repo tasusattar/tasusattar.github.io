@@ -9,8 +9,8 @@ directpg = {
 
 // symbol = document.getElementById('symbl');
 backbutt = document.getElementById('bac');
-leftbutt = document.getElementById('left');
-rightbutt = document.getElementById('right');
+leftbutt = document.getElementById('leftbtn');
+rightbutt = document.getElementById('rightbtn');
 frameelem = document.getElementById('bod');
 fullscreen = document.getElementById('fullscreen');
 highlightbox = document.getElementById('highlightblock');
@@ -134,6 +134,7 @@ var pickhighlight = function(id){
   openpage(id, false);
   prevpgstack.pop();
   prevpgstack.push(directpg['HOME']);
+  backbutt.style.display = 'block';
 };
 
 
