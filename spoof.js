@@ -13,6 +13,7 @@ leftbutt = document.getElementById('left');
 rightbutt = document.getElementById('right');
 frameelem = document.getElementById('bod');
 fullscreen = document.getElementById('fullscreen');
+highlightbox = document.getElementById('highlightblock');
 
 
 // Make Pages and store in directpg
@@ -38,6 +39,7 @@ var choosefirstpage = function(id){
     left: 0,
     behavior: 'smooth'
   });
+  hidehighlights();
   frameelem.style.backgroundColor = '#fffff4';
   backbutt.style.display = 'block';
   var pgofchoice = directpg[id];
@@ -111,6 +113,21 @@ var switchselected = function(next){
 
 var setpickedsinglepth = function(singlepath){
   singlepickedpth = singlepath;
+};
+
+var hidehighlights = function(){
+  highlightbox.style.display = 'none';
+};
+
+var pickhighlight = function(id){
+  fullscreen.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+  hidehighlights();
+  openpage(id, false);
+  current = directpg['MUSINGS'];
 };
 
 
