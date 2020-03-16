@@ -75,8 +75,8 @@ var openpage = function(id, elemcoll){
     prevpgstack.push(current);
     toopen = current.findsingleitem(id);
     toopen.display();
-    leftbutt.style.display = 'flex';
-    rightbutt.style.display = 'flex';
+    leftbutt.style.display = 'block';
+    rightbutt.style.display = 'block';
     frameelem.style.backgroundColor = 'transparent';
   }
 };
@@ -149,13 +149,13 @@ function keyswitch(e){
       break;
     case 37:
       // alert('left');
-      if ("flex" == leftbutt.style.display){
+      if ("block" == leftbutt.style.display){
         switchselected(false);
       }
       break;
     case 39:
       // alert('right');
-      if("flex" == rightbutt.style.display){
+      if("block" == rightbutt.style.display){
         switchselected(true);
       }
       break;

@@ -120,11 +120,13 @@ html, body{
 #leftbtn{
   left: 3%;
   background-image: url('../icons/leftarrow.png');
+  background-position: left;
 }
 
 #rightbtn{
   right: 3%;
-  background-image: url('../icons/rightarrow.png')
+  background-image: url('../icons/rightarrow.png');
+  background-position: right;
 }
 
 .arrow{
@@ -143,12 +145,8 @@ html, body{
   /* margin: 8vh 0; */
   text-align: center;
 
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-  background-position: center;
-  background-size: contain;
+  /* background-position: center; */
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
