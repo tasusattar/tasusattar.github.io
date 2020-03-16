@@ -123,10 +123,18 @@ html, body{
   background-position: left;
 }
 
+#leftbtn:hover{
+  background-image: url('../icons/leftarrowblack.png');
+}
+
 #rightbtn{
   right: 3%;
   background-image: url('../icons/rightarrow.png');
   background-position: right;
+}
+
+#rightbtn:hover{
+  background-image: url('../icons/rightarrowblack.png');
 }
 
 .arrow{
@@ -165,7 +173,7 @@ html, body{
 .arr:hover {
   background-color: white;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.3;
   /* color: var(--dp); */
 }
 
