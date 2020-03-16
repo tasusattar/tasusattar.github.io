@@ -46,7 +46,6 @@
 <script>
 
   var prntwindow = window.parent;
-  var prnthighlights = prntwindow.highlightbox;
   var prevpgstack = prntwindow.prevpgstack;
   var frameel = prntwindow.frameelem;
   var slider = document.getElementById('slideshow');
@@ -55,6 +54,9 @@
 
   prntwindow.backbutt.style.display = 'none';
   prntwindow.highlightbox.style.display = 'flex';
+  prntwindow.footerbox.style.top = '155vh';
+  prntwindow.addfolio.style.display = 'block';
+
   frameel.style.backgroundColor = 'transparent';
   prevpgstack = [];
 

@@ -32,9 +32,9 @@
       </div>
     </div> -->
 
-    <div id='backbtn' title="Back"><img id='bac' class='arrow' src='icons/arrowback.png'></div>
-    <div id='leftbtn' class='arr'><img id='left' class='arrow' src='icons/leftarrow.png'></div>
-    <div id='rightbtn' class='arr'><img id='right' class='arrow' src='icons/rightarrow.png'></div>
+    <div id='backbtn' title="Back"><img id='bac' src='icons/arrowback.png'></div>
+    <div id='leftbtn' class='arr'><img id='left' class='arrow' style="margin-left: -15%" src='icons/leftarrow.png'></div>
+    <div id='rightbtn' class='arr'><img id='right' class='arrow' style="margin-right: -15%" src='icons/rightarrow.png'></div>
 
 
     <iframe id='bod'></iframe>
@@ -42,12 +42,16 @@
 
 
     <div id='highlightblock'>
-      <li class='highlight'><img src="MUSINGS/Bene-wars.png" onclick="pickhighlight('Bene-wars')"></img></li>
+      <!-- <li class='highlight'><img src="MUSINGS/Bene-wars.png" onclick="pickhighlight('Bene-wars')"></img></li>
       <li class='highlight'><img src="MUSINGS/concertalllie.jpg" onclick="pickhighlight('concertalllie')"></img></li>
       <li class='highlight'><img src="MUSINGS/dutch.png" onclick="pickhighlight('dutch')"></img></li>
-      <li class='highlight'><img src="MUSINGS/OglingEyes.png" onclick="pickhighlight('OglingEyes')"></img></li>
+      <li class='highlight'><img src="MUSINGS/OglingEyes.png" onclick="pickhighlight('OglingEyes')"></img></li> -->
+      <div class='highlight' style="background-image:url('MUSINGS/Bene-wars.png')" onclick="pickhighlight('Bene-wars')"></div>
+      <div class='highlight' style="background-image:url('MUSINGS/concertalllie.jpg')" onclick="pickhighlight('concertalllie')"></div>
+      <div class='highlight' style="background-image:url('MUSINGS/dutch.png')" onclick="pickhighlight('dutch')"></div>
+      <div class='highlight' style="background-image:url('MUSINGS/OglingEyes.png')" onclick="pickhighlight('OglingEyes')"></div>
     </div>
-    <div id='tofolio'></div>
+    <div id='tofolio' onclick="choosefirstpage('PORTFOLIO')"></div>
 
     <div id='foot'>
       <ul class='footlist' id='navdirectory'>

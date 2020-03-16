@@ -112,7 +112,7 @@ html, body{
   height: 5vmin;
   width: 5vmin;
   background-color: var(--dark);
-  border: 0.5px groove var(--dark);
+  /* border: 0.5px groove var(--dark); */
   border-radius: 50%;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 3px 0 rgba(0,0,0,0.1);
 }
@@ -125,15 +125,21 @@ html, body{
   right: 1%;
 }
 
+.arrow{
+  margin: 30vh 0;
+}
+
 .arr{
   display: inline-block;
   position: absolute;
   background-color: transparent;
-  height: 100vh;
-  width: 30vw;
+  height: 80vh;
+  width: 25vw;
   top: 1%;
   overflow: hidden;
   z-index: 7;
+  margin: 8vh 0;
+  text-align: center;
 }
 
 /* .arrow{

@@ -14,6 +14,8 @@ rightbutt = document.getElementById('right');
 frameelem = document.getElementById('bod');
 fullscreen = document.getElementById('fullscreen');
 highlightbox = document.getElementById('highlightblock');
+addfolio = document.getElementById('tofolio');
+footerbox = document.getElementById('foot');
 
 
 // Make Pages and store in directpg
@@ -117,6 +119,8 @@ var setpickedsinglepth = function(singlepath){
 
 var hidehighlights = function(){
   highlightbox.style.display = 'none';
+  footerbox.style.top = '100vh';
+  addfolio.style.display = 'none';
 };
 
 var pickhighlight = function(id){
