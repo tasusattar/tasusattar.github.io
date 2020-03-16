@@ -94,19 +94,19 @@ html, body{
 
 #backbtn{
   display: block;
-  position: absolute;
+  position: fixed;
   height: 5.5vmin;
   width: 5.5vmin;
   top: 1%;
   right: 1%;
   overflow: hidden;
-  z-index: 9;
+  z-index: 10;
   /* border-radius: 50%;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 3px 5px 0 rgba(0,0,0,0.15); */
 }
 
 #bac{
-  display: block;
+  /* display: block; */
   display: none;
   margin: auto;
   height: 5vmin;
@@ -137,17 +137,14 @@ html, body{
   background-image: url('../icons/rightarrowblack.png');
 }
 
-.arrow{
-  margin: 30vh 0;
-}
-
 .arr{
   display: none;
   position: absolute;
   background-color: transparent;
-  height: 94vh;
+  opacity: 0.5;
+  height: 100vh;
   width: 23vw;
-  top: 3%;
+  top: 0;
   overflow: hidden;
   z-index: 7;
   /* margin: 8vh 0; */
@@ -173,7 +170,7 @@ html, body{
 .arr:hover {
   background-color: white;
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.2;
   /* color: var(--dp); */
 }
 
