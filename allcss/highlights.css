@@ -57,9 +57,9 @@
   overflow-y: hidden;
 
   top: 148vh;
-  left: 48.5vw;
   height: 8vh;
   width: 8vh;
+  margin: 0% 0.5%;
 
   border-radius: 50%;
   background-color: var(--dr);
