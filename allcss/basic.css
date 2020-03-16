@@ -165,7 +165,7 @@ html, body{
 .arr:hover {
   background-color: white;
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.5;
   /* color: var(--dp); */
 }
 
