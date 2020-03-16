@@ -118,11 +118,11 @@ html, body{
 }
 
 #leftbtn{
-  left: 1%;
+  left: 3%;
 }
 
 #rightbtn{
-  right: 1%;
+  right: 3%;
 }
 
 .arrow{
@@ -130,16 +130,24 @@ html, body{
 }
 
 .arr{
-  display: inline-block;
+  display: none;
   position: absolute;
   background-color: transparent;
   height: 80vh;
-  width: 25vw;
+  width: 20vw;
   top: 1%;
   overflow: hidden;
   z-index: 7;
-  margin: 8vh 0;
+  /* margin: 8vh 0; */
   text-align: center;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* .arrow{
@@ -155,8 +163,9 @@ html, body{
 } */
 
 .arr:hover {
+  background-color: white;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.3;
   /* color: var(--dp); */
 }
 

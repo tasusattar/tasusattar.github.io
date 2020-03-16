@@ -75,8 +75,8 @@ var openpage = function(id, elemcoll){
     prevpgstack.push(current);
     toopen = current.findsingleitem(id);
     toopen.display();
-    leftbutt.style.display = 'block';
-    rightbutt.style.display = 'block';
+    leftbutt.style.display = 'flex';
+    rightbutt.style.display = 'flex';
     frameelem.style.backgroundColor = 'transparent';
   }
 };
@@ -133,6 +133,7 @@ var pickhighlight = function(id){
   current = directpg['MUSINGS'];
   openpage(id, false);
   prevpgstack.pop();
+  prevpgstack.push(directpg['HOME']);
 };
 
 
@@ -147,13 +148,13 @@ function keyswitch(e){
       break;
     case 37:
       // alert('left');
-      if ("block" == leftbutt.style.display){
+      if ("flex" == leftbutt.style.display){
         switchselected(false);
       }
       break;
     case 39:
       // alert('right');
-      if("block" == rightbutt.style.display){
+      if("flex" == rightbutt.style.display){
         switchselected(true);
       }
       break;
