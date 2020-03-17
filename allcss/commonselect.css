@@ -56,6 +56,7 @@ body{
   /* background-image: url('../icons/jackie.png'); */
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 
   align-self: center;
 }
@@ -136,6 +137,7 @@ body{
   background-color: var(--rosered1);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   box-shadow: 0 7px 12px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
 
