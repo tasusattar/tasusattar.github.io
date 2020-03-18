@@ -79,17 +79,19 @@ body{
 
 #description{
   display: none;
+  font-style:
   /* display: inline-block; */
   color: var(--dark);
   align-self: center;
-  text-align: justify;
+  text-align: left;
   text-indent: 2%;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: lighter;
   margin: 3% 8%;
   padding: 1.5% 1%;
   border-top: thin groove var(--dark);
   border-bottom: thin groove var(--dark);
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.05em; */
   width: -webkit-fill-available;
 
 }
