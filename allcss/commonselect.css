@@ -196,6 +196,7 @@ body{
   font-size: small;
   z-index: 5;
   top: 4px;
+  font-weight: 200;
 }
 
 .info:hover{
