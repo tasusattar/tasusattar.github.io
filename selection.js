@@ -19,6 +19,6 @@ setTimeout(function(){
   docbod.style.width = "100%";
   docbod.style.visibility = "visible";
   docbod.style.opacity = 1;
-}, 400);
+}, 600);
 
 document.addEventListener('keydown', window.parent.keyswitch);

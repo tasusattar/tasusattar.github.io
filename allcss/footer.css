@@ -30,7 +30,7 @@
   position: relative;
   list-style: none;
 
-  height: 90%;
+  height: 92%;
   width: 48%;
   margin: 1% 1%;
   padding-left: 1%;
@@ -89,4 +89,17 @@ a{
 
 #footcontact li span{
   vertical-align: top;
+}
+
+#propic{
+  display: block;
+  border-radius: 50%;
+  height: 17vh;
+  width: 17vh;
+  background-image: url('../icons/jackie.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 7px 12px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
+
 }

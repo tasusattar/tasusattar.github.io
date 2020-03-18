@@ -24,18 +24,29 @@
 
   <div id='description'></div>
 
-  <div id='listcontainer'>
-    <!-- <div class='contentlist'>
-      <div id='about' class='contentcontainer'><div class='bubble collection'><div id='colorscreen'></div></div><div class='info'>about</div></div>
-      <div id='about' class='contentcontainer'><div class='bubble collection'><div id='colorscreen'></div></div><div class='info'>about</div></div>
-    </div>
-    <div class='contentlist'>
-      <div id='single1' class='contentcontainer'><div class='bubble singles'></div><div class='info'>about</div></div>
-    </div> -->
+  <div id='listcontainer'></div>
 
-  </div>
+  <!-- <script src='selection.js'></script> -->
+  <script>
+    var thispg = window.parent.current;
+    var divs = ['profilepic', 'bannerpic', 'description', 'listcontainer'];
+    var docbod = document.body;
 
-  <script src='selection.js'></script>
+    for (var divi = 0; divi < divs.length; divi++){
+      var div = divs[divi];
+      var realelem = document.getElementById(div);
+      thispg.generate(div, realelem);
+    }
+
+
+    setTimeout(function(){
+      docbod.style.width = "100%";
+      docbod.style.visibility = "visible";
+      docbod.style.opacity = 1;
+    }, 600);
+
+    document.addEventListener('keydown', window.parent.keyswitch);
+  </script>
 
 </body>
 
