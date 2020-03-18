@@ -1,4 +1,4 @@
 An ardent fan of Python - it's versatility and accessibility beat all others -
-but also an approving supporter of anything JavaScript. Having taken Python and Java courses
-in university and taught courses to children, I have a strong sense of programming fundamentals. But
-I've always enjoyed coding as a creative outlet.
+ but also an approving supporter of anything JavaScript. Having taken Python and Java courses
+ in university and taught courses to children, I have a strong sense of programming fundamentals. But
+ I've always enjoyed coding as a creative outlet.
