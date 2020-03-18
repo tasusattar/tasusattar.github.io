@@ -86,7 +86,7 @@ body{
   text-align: left;
   text-indent: 2%;
   font-size: 1em;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 3% 8%;
   padding: 1.5% 1%;
   border-top: thin groove var(--dark);
