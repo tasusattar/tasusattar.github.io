@@ -81,7 +81,8 @@ outson = {
     'ABOUT': {},
     'WORK': {},
     'TRAVELS': {},
-    'MUSINGS': {}
+    'MUSINGS': {},
+    'LINKS' : {}
 }
 
 for key in outson:

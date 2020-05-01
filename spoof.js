@@ -4,7 +4,8 @@ directpg = {
   'WORK' : null,
   'TRAVELS': null,
   'MUSINGS': null,
-  'PORTFOLIO': null
+  'PORTFOLIO': null,
+  'LINKS': null
 };
 
 // symbol = document.getElementById('symbl');

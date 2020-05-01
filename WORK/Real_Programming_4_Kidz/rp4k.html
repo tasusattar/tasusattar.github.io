@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link type="text/css" rel="stylesheet" href="../../allcss/colors.css" media="screen,projection"/>
+
+  <style type="text/css">
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height:100%;
+      width: 100%;
+      margin:0;
+    }
+    #gamescreen{
+      display: inline-block;
+      position: relative;
+      height: 500px;
+      width: 300px;
+      border: 1px solid var(--dr);
+      background-color: var(--dark);
+    }
+
+    #controls{
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      height: auto;
+      margin: 1%;
+      }
+    .control{
+      height: 5vh;
+      width: 5vh;
+      margin: 5px;
+      background-color: var(--rosered2);
+      border-radius: 50%;
+    }
+
+    .control:hover{
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    #updown{
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <div style='margin: 0 2%; margin-top:1%'><canvas id='gamescreen'></canvas></div>
+  <p>Score: <span id='score'>0</span></p>
+  <div id='controls'>
+      <img class='control' src='leftarrow.png'></img>
+      <div id='updown'>
+        <img class='control' src='uparrow.png'></img>
+        <img class='control' src='downarrow.png'></img>
+      </div>
+      <img class='control' src='rightarrow.png'></img>
+      <img class='control' src='spacebar.png' style='width:7vh'></img>
+  </div>
+
+  <script> </script>
+
+</body>
+
+
+</html>
