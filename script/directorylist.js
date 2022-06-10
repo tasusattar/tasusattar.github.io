@@ -45,40 +45,72 @@ var closescreen = function(){
     document.body.style.overflowY = "scroll";
 }
 
+var changebg = function(idname, subnum){
+    
+    var furl = "media/" + idname + "/";
+    var newPD = document.getElementById(idname);
+
+    // newPD.style.opacity = 0;
+    newPD.className += " hideme";
+
+    // newPD.src = furl+dirlist[idname][subnum]; 
+    // newPD.setAttribute('onclick', "javascript: opensauce('"+ furl+dirlist[idname][subnum] + "')");
+    var nsubnum = (subnum+1<dirlist[idname].length) ? subnum+1 : 0;
+
+
+    setTimeout(function(){
+        newPD.src = furl+dirlist[idname][subnum]; 
+        newPD.setAttribute('onclick', "javascript: opensauce('"+ furl+dirlist[idname][subnum] + "')");
+        // newPD.style.opacity = "100%";
+        newPD.className = "piclist multiframe";
+        
+    }, 1000);
+
+    setTimeout(function(){ 
+        changebg(idname, nsubnum);
+    }, 5000);
+
+}
+
  var MediaContent = function(){
     function MediaContent(pathinfo){
         var _pathinfo = pathinfo;
-        var _subpaths = [];
+        // var _subpaths = [];
         var _urlName = "media/" + _pathinfo;
-        var _urlSub = "";
+        // var _urlSub = "";
         var newPicDiv = document.createElement("img");
-        var _subi = 0;
+        // var _subi = 0;
         
         newPicDiv.className = "piclist";
 
 
-        if (_pathinfo.slice(-4, -3) !== ".") { _subpaths = _subpaths.concat(dirlist[_pathinfo]); }
+        // if (_pathinfo.slice(-4, -3) !== ".") { _subpaths = _subpaths.concat(dirlist[_pathinfo]); }
 
-        this.makediv = function(){
+        this.makediv = function(){            
 
-            _urlSub += (_subpaths.length > 0) ? "/" + _subpaths[_subi] : "";
-            newPicDiv.src = _urlName + _urlSub ;
+            // if (_subpaths.length > 0) {
+            if (_pathinfo.slice(-4, -3) !== "."){
+                // _urlSub += "/" + _subpaths[_subi];
+                _urlName += "/" + dirlist[_pathinfo][0];
+                newPicDiv.setAttribute('id', pathinfo);
+                newPicDiv.className += " multiframe";
+                setTimeout(function(){changebg(pathinfo,1);}, 2000); 
+            }
 
-            newPicDiv.setAttribute('onclick', "javascript: opensauce('"+ newPicDiv.src + "')")
+            // newPicDiv.src = _urlName + _urlSub ;
+            newPicDiv.src = _urlName;
+            newPicDiv.setAttribute('onclick', "javascript: opensauce('"+ _urlName + "')")
+
             return newPicDiv;
 
         }
 
-        this.changebg = function(){
-
-            _subi = (_subi+1 < _subpaths.length) ? _subi+1 : 0;
-            console.log(_subi);
-            newPicDiv.src = _urlName + _urlSub ;
-        }
     }
 
     return MediaContent;
 }();
+
+// EXECUTE
 
 for (var i=0; i<filelist.length; i++) {
     // var newPicDiv = document.createElement("div");
@@ -95,11 +127,13 @@ for (var i=0; i<filelist.length; i++) {
     var divmade = mdCont.makediv();
     filldiv.appendChild(divmade);
 
-    if (filelist[i].slice(-4,-3) !== "."){
+    // if (filelist[i].slice(-4,-3) !== "."){
         
-        setInterval(divmade.changebg, 3000);
+    //     setInterval(divmade.changebg, 3000);
 
-    }
+    // }
     
 }
+
+
 
