@@ -1,10 +1,17 @@
-var filelist = [ "concertalllie.jpg", "benewars.jpg", "Pink_Flamingo", "gaze.jpg",
-    "Dutch_Resistance",  "mimimnbabbi.jpg", "OglingEyes.png", "cnconstruction.jpg", "ShiningStar.jpg",
-     "Squirrel",  'succulent.jpg', "nekos.png",  "Nuzha_Card" ];
+var filelist = [ "concertalllie.jpg", 
+     "benewars.jpg", "Pink_Flamingo", "gaze.jpg",
+     "Miro.png", "mimimnbabbi.jpg", "mahersarah.jpg",
+     "Dutch_Resistance", "ShiningStar.jpg", "cnconstruction.jpg",
+     "OglingEyes.png", "nekos.png", 'succulent.jpg', 
+     "poopityscoop.gif", "Squirrel" ];
+
+//var filelist = [ "concertalllie.jpg", "benewars.jpg", "Pink_Flamingo", "gaze.jpg",
+    // "Dutch_Resistance",  "mimimnbabbi.jpg", "OglingEyes.png", "cnconstruction.jpg", "ShiningStar.jpg",
+    //  "Squirrel",  'succulent.jpg', "nekos.png",  "Nuzha_Card" ];
 
 var dirlist = {
     "Dutch_Resistance": ["cover.png", "1Freddie.jpg","2Truus.jpg","3Hannie.jpg"],
-    "Pink_Flamingo": ["flamingodance.jpg", "flamingodance2.jpg", "flamingodance3.jpg",],
+    "Pink_Flamingo": ["flamingodance2.jpg", "flamingodance.jpg", "flamingodance3.jpg"],
     // "MRR_Card": ["finalfront.png", "finalback.png"],
     "Nuzha_Card": ["cf4.jpg","cb4.jpg"],
     "Squirrel" : ["Squirrel.jpg",	"Squirrel2.jpg", "Squirrel4.jpg",
