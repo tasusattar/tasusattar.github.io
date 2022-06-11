@@ -95,6 +95,9 @@ body{
       /* align-content: center; */
       margin: 1%;
       flex-grow: 2;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
   }
 
   .piclist {
@@ -142,7 +145,7 @@ body{
   }
 
   .multiframe{
-    transition: opacity 0.75s linear, height 1s ease;
+    transition: opacity 0.5s linear, height 1s ease;
   }
 
   .hideme{
