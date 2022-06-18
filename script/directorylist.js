@@ -10,8 +10,8 @@ var filelist = [ "concertalllie.jpg",
     //  "Squirrel",  'succulent.jpg', "nekos.png",  "Nuzha_Card" ];
 
 var dirlist = {
-    "Dutch_Resistance": ["cover.png", "1Freddie.jpg","2Truus.jpg","3Hannie.jpg"],
-    "Pink_Flamingo": ["flamingodance2.jpg", "flamingodance.jpg", "flamingodance3.jpg"],
+    "Dutch_Resistance": ["cover.jpg", "1Freddie.jpg","2Truus.jpg","3Hannie.jpg"],
+    "Pink_Flamingo": ["flamingodance.jpg", "flamingodance2.jpg", "flamingodance3.jpg"],
     // "MRR_Card": ["finalfront.png", "finalback.png"],
     "Nuzha_Card": ["cf4.jpg","cb4.jpg"],
     "Squirrel" : ["Squirrel.jpg",	"Squirrel2.jpg", "Squirrel4.jpg",
