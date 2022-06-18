@@ -1,6 +1,6 @@
 var filelist = [ "concertalllie.jpg", 
      "benewars.jpg", "Pink_Flamingo", "gaze.jpg",
-     "Miro.png", "mimimnbabbi.jpg", "mahersarah.jpg",
+     "Miro.jpg", "mimimnbabbi.jpg", "mahersarah.jpg",
      "Dutch_Resistance", "ShiningStar.jpg", "cnconstruction.jpg",
      "OglingEyes.png", "nekos.png", 'succulent.jpg', 
      "poopityscoop.gif", "Squirrel" ];
@@ -47,7 +47,7 @@ var closescreen = function(){
 
 var changebg = function(idname, subnum){
     
-    var furl = "media/" + idname + "/";
+    var furl = "mediaicons/" + idname + "/";
     var newPD = document.getElementById(idname);
 
     // newPD.style.opacity = 0;
@@ -60,7 +60,7 @@ var changebg = function(idname, subnum){
 
     setTimeout(function(){
         newPD.src = furl+dirlist[idname][subnum]; 
-        newPD.setAttribute('onclick', "javascript: opensauce('"+ furl+dirlist[idname][subnum] + "')");
+        newPD.setAttribute('onclick', "javascript: opensauce('media/" + idname + "/"+dirlist[idname][subnum] + "')");
         // newPD.style.opacity = "100%";
         newPD.className = "piclist multiframe";
         
@@ -76,7 +76,8 @@ var changebg = function(idname, subnum){
     function MediaContent(pathinfo){
         var _pathinfo = pathinfo;
         // var _subpaths = [];
-        var _urlName = "media/" + _pathinfo;
+        var _urlName = "mediaicons/" + _pathinfo;
+        var _urlClick = "media/ " + _pathinfo;
         // var _urlSub = "";
         var newPicDiv = document.createElement("img");
         // var _subi = 0;
@@ -92,6 +93,7 @@ var changebg = function(idname, subnum){
             if (_pathinfo.slice(-4, -3) !== "."){
                 // _urlSub += "/" + _subpaths[_subi];
                 _urlName += "/" + dirlist[_pathinfo][0];
+                _urlClick += "/" + dirlist[_pathinfo][0];
                 newPicDiv.setAttribute('id', pathinfo);
                 newPicDiv.className += " multiframe";
                 setTimeout(function(){changebg(pathinfo,1);}, 2000); 
@@ -99,7 +101,7 @@ var changebg = function(idname, subnum){
 
             // newPicDiv.src = _urlName + _urlSub ;
             newPicDiv.src = _urlName;
-            newPicDiv.setAttribute('onclick', "javascript: opensauce('"+ _urlName + "')")
+            newPicDiv.setAttribute('onclick', "javascript: opensauce('" + _urlClick + "')")
 
             return newPicDiv;
 
