@@ -112,6 +112,7 @@ body{
     /* max-width: 50%; */
     /* flex-grow: 1; */
 
+    background-color: black;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
