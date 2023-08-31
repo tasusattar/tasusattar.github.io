@@ -1,7 +1,8 @@
 body{
-    height:fit-content;
+    height: fit-content;
     width: 100%;
-    margin:0px;
+    margin: 5px;
+    /* padding: 2px; */
   
     font-family: Geneva, Verdana, sans-serif;
     letter-spacing: 0.05em;
@@ -11,6 +12,10 @@ body{
     overflow-x: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
+
+    display: flex;
+    justify-content: center;
+
   }
 
   #fullscreen{
@@ -19,6 +24,8 @@ body{
 
     height: 100%;
     width: 100%;
+    max-width: 1300px;
+    
 
     z-index: 1;
   
@@ -31,8 +38,9 @@ body{
   #TASU{
       display: block;
       position: fixed;
-      top: 10vh;
-      left: 5vw;
+      /* top: 10vh;
+      left: 5vw; */
+      margin: 4%;
       z-index: 6;
       color: #9B111E;
       /* font-size: 60px; */
@@ -67,7 +75,7 @@ body{
 
       z-index: 6;
 
-      margin: 0 0 2px 0;
+      margin: 2px 0px;
       box-shadow: 1px 2px 0.5px rgba(0, 0, 0, 0.5);
 
 
@@ -95,9 +103,9 @@ body{
       /* align-content: center; */
       margin: 1%;
       flex-grow: 2;
-      align-items: center;
+      align-items:center;
       align-content: center;
-      justify-content: center;
+      justify-content: space-between;
   }
 
   .piclist {
@@ -105,11 +113,12 @@ body{
     position: relative;
     z-index: 2;
 
-    height: 30vw;
+    height: 25vh;
     max-height: 50%;
-    min-height: 25%;
-    width: 25vw;
-    /* max-width: 50%; */
+    min-height: 25vw;
+    width: 20vw;
+    min-width: 30%;
+    /* max-width: 25vw; */
     /* flex-grow: 1; */
 
     background-color: black;
@@ -130,6 +139,7 @@ body{
   }
 
   .piclist:first-child {
+    max-width: 100%;
     width: 100%;
     object-position:top ;    
   }
