@@ -110,6 +110,7 @@ var changebg = function(idname, subnum){
             // newPicDiv.src = _urlName + _urlSub ;
             newPicDiv.src = _urlName;
             newPicDiv.setAttribute('onclick', "javascript: opensauce('" + _urlClick + "')")
+            newPicDiv.setAttribute("alt", "Tasawar Sattar")
 
             return newPicDiv;
 
