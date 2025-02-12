@@ -1,4 +1,4 @@
-var filelist = [ "concertalllie.jpg", 
+var filelist = [ "ColorCover.jpg", 
      "benewars.jpg", "Pink_Flamingo", "gaze.jpg",
      "Miro.jpg", "mimimnbabbi.jpg", "mahersarah.jpg",
      "London1.jpg","OglingEyes.png", "cnconstruction.jpg", 
